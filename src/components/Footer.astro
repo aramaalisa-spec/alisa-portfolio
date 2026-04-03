@@ -1,0 +1,33 @@
+---
+import { getSite } from '../utils/consts';
+import Clock from './Clock.astro';
+
+const today = new Date();
+const site = await getSite();
+---
+
+<footer class="py-8">
+  <div class="content-shell content-shell--flush">
+    <div class="grid gap-6 pt-8 pb-4 md:flex md:items-center md:justify-between">
+      <div class="space-y-2">
+        <div class="flex gap-4">
+          <a href="https://www.linkedin.com/in/alisa-arama-27892b86/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase text-base-900 hover:text-base-500">LinkedIn</a>
+          <a href="mailto:arama.alisa@proton.me" class="text-xs font-bold uppercase text-base-900 hover:text-base-500">Email</a>
+        </div>
+        <p class="text-sm text-muted m-0">&copy; {today.getFullYear()} Alisa Arama. All rights reserved.</p>
+      </div>
+      <div class="md:text-right space-y-2 md:space-y-1">
+        <div class="flex flex-wrap items-center gap-3 md:justify-end">
+          <p class="text-2xl sm:text-3xl font-semibold tracking-tight text-ink m-0">Berlin</p>
+          <Clock
+            timeZone="Europe/Berlin"
+            locale="de-DE"
+            hour12={false}
+            showSeconds={false}
+          />
+        </div>
+        <p class="text-sm text-subtle m-0">Built with <a href="https://astro.build" target="_blank" rel="noreferrer" class="underline">Astro</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
