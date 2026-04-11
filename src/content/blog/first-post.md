@@ -51,7 +51,7 @@ Because the calculator is only available for members already registered on the p
 
 Once the entire system was clear, we assessed the difficulty of every step, I wrote the user stories, and planned the sprints so that the work on the internal architecture could begin while I was designing and iterating on the UI. 
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="<https://embed.figma.com/design/SPCXUiIZG865VIUVG9Rlud/Member-Area-2.0?node-id=8569-2240&embed-host=share>" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/SPCXUiIZG865VIUVG9Rlud/Member-Area-2.0?node-id=8569-2240&embed-host=share" allowfullscreen></iframe>
 
 ## **UI design**
 
