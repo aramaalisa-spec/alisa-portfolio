@@ -49,8 +49,8 @@ Once I had an overall idea, I approached our development team to discuss the int
 
 Because the calculator is only available for members already registered on the platform, we had a head start. But we couldn’t simply add the debtor details to their existing CRM records, as it would bloat them significantly. Moreover, one person could borrow money using a variety of legal entities, so the new data had to be stored separately and linked to the original profiles. To capture everything the matching logic would eventually rely on, the banks required an entire new CRM module. It should be easy for business developers and transaction managers to add, delete and maintain these records.
 
-Once the entire system was clear, we assessed the difficulty of every step, I wrote the user stories, and planned the sprints so that the work on the internal architecture could begin while I was designing and iterating on the UI. 
-
+Once the entire system was clear, we assessed the difficulty of every step, I wrote the user stories, and planned the sprints so that the work on the internal architecture could begin while I was designing and iterating on the UI.
+ 
 import PropertyCalculator from '../../components/PropertyCalculator.astro';
 
 <PropertyCalculator />
