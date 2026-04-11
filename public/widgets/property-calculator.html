@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Volume and loan amount</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background: #fff;
+    padding: 32px 24px 48px;
+  }
+
+  .widget {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .main-col { width: 100%; }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #000;
+    max-width: 416px;
+  }
+
+  .section-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #5a5a5a;
+    display: block;
+    margin-bottom: 8px;
+    max-width: 416px;
+  }
+
+  .input-wrap {
+    background: #f5f6f7;
+    border-bottom: 2px solid #a7aeba;
+    padding: 10px 12px;
+    margin-bottom: 28px;
+    max-width: 416px;
+  }
+
+  .property-input {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #000;
+    letter-spacing: 1.4px;
+    width: 100%;
+  }
+
+  .property-input::placeholder { color: #a7aeba; }
+
+  /* Lower area layout */
+  .lower-area {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .lower-left {
+    width: 416px;
+    flex-shrink: 0;
+  }
+
+  /* Slider */
+  .slider-section { margin-bottom: 20px; }
+
+  .slider-wrap {
+    position: relative;
+    padding-top: 32px;
+  }
+
+  .tooltip {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    border: 1px solid #296b54;
+    padding: 2px 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+    background: #fff;
+  }
+
+  .tooltip.danger { border-color: #e15a5a; }
+
+  .tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #296b54;
+  }
+
+  .tooltip.danger::after { border-top-color: #e15a5a; }
+
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0;
+    background: linear-gradient(to right, #296b54 50%, #dcdfe3 50%);
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1.5px solid #a7aeba;
+    cursor: pointer;
+  }
+
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0.7px;
+  }
+
+  /* Results */
+  .results {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .result-card {
+    flex: 1;
+    border: 1px solid #a7aeba;
+    background: #f5f6f7;
+    padding: 14px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .result-card.danger {
+    background: #f9dede;
+    border-color: #e15a5a;
+  }
+
+  .result-label {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #5a5a5a;
+  }
+
+  .result-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  /* Warning panel */
+  .warning-col {
+    flex: 1;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 8px;
+  }
+
+  .warning-col.visible { display: flex; }
+
+  .warning-inner {
+    border-left: 4px solid #e15a5a;
+    padding: 12px 12px 16px;
+    background: #fff;
+  }
+
+  .warning-inner p {
+    font-size: 14px;
+    color: #5a5a5a;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+
+  .warning-inner p:last-of-type { margin-bottom: 14px; }
+
+  .consult-btn {
+    display: block;
+    width: 100%;
+    background: #727f97;
+    border: 1px solid #96a5c1;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  .consult-btn:hover { background: #5f6d84; }
+</style>
+</head>
+<body>
+
+<div class="widget">
+  <div class="main-col">
+    <h2>Volume and loan amount</h2>
+
+    <label class="section-label">Total property volume, in €:</label>
+    <div class="input-wrap">
+      <input type="text" class="property-input" id="property-value" placeholder="€ 0" inputmode="numeric"/>
+    </div>
+
+    <div class="lower-area">
+      <div class="lower-left">
+        <div class="slider-section">
+          <label class="section-label">Down payment</label>
+          <div class="slider-wrap">
+            <div class="tooltip" id="tooltip">50%</div>
+            <input type="range" id="slider" min="0" max="100" value="50"/>
+            <div class="slider-labels">
+              <span>0%</span>
+              <span>100%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="results">
+          <div class="result-card" id="equity-card">
+            <span class="result-label">Equity</span>
+            <span class="result-value" id="equity-val">€0</span>
+          </div>
+          <div class="result-card" id="loan-card">
+            <span class="result-label">Loan Amount</span>
+            <span class="result-value" id="loan-val">€0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="warning-col" id="warning">
+        <div class="warning-inner">
+          <p>Banks determine the loan amount based on their own valuation of the property. A lower down payment will affect the conditions of your loan.</p>
+          <p>An appropriate collateral can mitigate the risk. Our advisors can help you structure the most efficient financing strategy for your specific case.</p>
+          <button class="consult-btn">Book a Consultation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const slider = document.getElementById('slider');
+  const tooltip = document.getElementById('tooltip');
+  const input = document.getElementById('property-value');
+  const equityVal = document.getElementById('equity-val');
+  const loanVal = document.getElementById('loan-val');
+  const loanCard = document.getElementById('loan-card');
+  const warning = document.getElementById('warning');
+
+  function parseVal(str) {
+    return parseFloat(str.replace(/[€\s.]/g, '').replace(',', '.')) || 0;
+  }
+
+  function formatEuro(n) {
+    return '€' + Math.round(n).toLocaleString('de-DE');
+  }
+
+  function update() {
+    const pct = parseInt(slider.value);
+    const total = parseVal(input.value);
+    const equity = total * pct / 100;
+    const loan = total - equity;
+    const danger = pct < 20;
+
+    const thumbW = 14;
+    const offset = (thumbW / 2) - (pct / 100 * thumbW);
+    tooltip.style.left = `calc(${pct}% + ${offset}px)`;
+    tooltip.textContent = pct + '%';
+    tooltip.className = 'tooltip' + (danger ? ' danger' : '');
+
+    const fill = danger ? '#e15a5a' : '#296b54';
+    slider.style.background = `linear-gradient(to right, ${fill} ${pct}%, #dcdfe3 ${pct}%)`;
+
+    equityVal.textContent = formatEuro(equity);
+    loanVal.textContent = formatEuro(loan);
+    loanCard.className = 'result-card' + (danger ? ' danger' : '');
+    warning.className = 'warning-col' + (danger ? ' visible' : '');
+  }
+
+  slider.addEventListener('input', update);
+  input.addEventListener('input', update);
+
+  input.addEventListener('blur', () => {
+    const raw = parseVal(input.value);
+    if (raw > 0) input.value = '€ ' + raw.toLocaleString('de-DE');
+  });
+
+  input.addEventListener('focus', () => {
+    const raw = parseVal(input.value);
+    if (raw > 0) input.value = raw;
+  });
+
+  update();
+</script>
+</body>
+</html>
