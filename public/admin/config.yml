@@ -1,9 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: aramaalisa-spec/alisa-portfolio
   branch: main
 
-media_folder: public/images
-public_folder: /images
+media_folder: public/uploads
+public_folder: /uploads
 
 collections:
   - name: blog
