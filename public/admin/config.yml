@@ -2,6 +2,7 @@ backend:
   name: github
   repo: aramaalisa-spec/alisa-portfolio
   branch: main
+  base_url: https://decapcms.org
 
 media_folder: public/uploads
 public_folder: /uploads
