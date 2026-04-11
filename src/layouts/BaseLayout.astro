@@ -19,23 +19,12 @@ const { title = site.author.name, description, image } = Astro.props;
 <html lang="en">
     <head>
         <BaseHead title={title} description={description} image={image} />
-    
-</head>
+    </head>
     <body>
         <Header />
         <main class="content-shell">
             <slot />
         </main>
         <Footer />
-    <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script></body>
+    </body>
 </html>
