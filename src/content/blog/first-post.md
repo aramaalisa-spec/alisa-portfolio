@@ -51,7 +51,7 @@ Because the calculator is only available for members already registered on the p
 
 Once the entire system was clear, we assessed the difficulty of every step, I wrote the user stories, and planned the sprints so that the work on the internal architecture could begin while I was designing and iterating on the UI. 
 
-import PropertyCalculator from '../../components/PropertyCalculator.astro';
+<iframe src="/widgets/property-calculator.html" width="100%" height="420" frameborder="0" scrolling="no"></iframe>
 
 <PropertyCalculator />
 
