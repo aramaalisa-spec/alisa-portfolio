@@ -1,0 +1,298 @@
+<div class="calculator" id="calc">
+  <div class="calc-section">
+    <label class="calc-label">Total property volume, in €:</label>
+    <div class="input-wrap">
+      <span class="euro-prefix">€</span>
+      <input
+        type="text"
+        id="property-value"
+        class="property-input"
+        placeholder="0"
+        inputmode="numeric"
+      />
+    </div>
+  </div>
+
+  <div class="calc-section">
+    <label class="calc-label muted">Down payment</label>
+    <div class="slider-wrap">
+      <div class="tooltip" id="tooltip">50%</div>
+      <input
+        type="range"
+        id="slider"
+        min="0"
+        max="100"
+        value="50"
+        class="slider"
+      />
+      <div class="slider-labels">
+        <span>0%</span>
+        <span>100%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="warning-panel" id="warning" style="display:none;">
+    <p>Banks determine the loan amount based on their own valuation of the property. A lower down payment will affect the conditions of your loan. An appropriate collateral can mitigate the risk.</p>
+    <p>Our advisors can help you structure the most efficient financing strategy for your specific case.</p>
+    <button class="consult-btn">BOOK A CONSULTATION</button>
+  </div>
+
+  <div class="results">
+    <div class="result-card" id="equity-card">
+      <span class="result-label">EQUITY</span>
+      <span class="result-value" id="equity-val">€0</span>
+    </div>
+    <div class="result-card" id="loan-card">
+      <span class="result-label">LOAN AMOUNT</span>
+      <span class="result-value" id="loan-val">€0</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .calculator {
+    font-family: "Sofia Sans", sans-serif;
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 2rem 0;
+    position: relative;
+  }
+
+  .calc-section {
+    margin-bottom: 2rem;
+  }
+
+  .calc-label {
+    display: block;
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 0.75rem;
+  }
+
+  .calc-label.muted {
+    color: #aaa;
+  }
+
+  .input-wrap {
+    display: flex;
+    align-items: center;
+    background: #f0f4f3;
+    border-bottom: 2px solid #3a7060;
+    padding: 0.75rem 1rem;
+  }
+
+  .euro-prefix {
+    font-size: 1.8rem;
+    color: #555;
+    margin-right: 0.5rem;
+  }
+
+  .property-input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    color: #444;
+    width: 100%;
+    font-family: inherit;
+  }
+
+  .slider-wrap {
+    position: relative;
+    padding-top: 2.5rem;
+  }
+
+  .tooltip {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1.5px solid #222;
+    padding: 2px 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #222;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(to right, #3a7060 0%, #3a7060 50%, #ddd 50%, #ddd 100%);
+    outline: none;
+    cursor: pointer;
+  }
+
+  .slider.danger {
+    background: linear-gradient(to right, #c0392b 0%, #c0392b var(--pct), #ddd var(--pct), #ddd 100%);
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #888;
+    cursor: pointer;
+  }
+
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 0.4rem;
+  }
+
+  .results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .result-card {
+    background: #f0f4f3;
+    border: 1px solid #d5e0dc;
+    border-radius: 4px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .result-card.danger {
+    background: #fce8e6;
+    border-color: #e8b4b0;
+  }
+
+  .result-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: #888;
+    text-transform: uppercase;
+  }
+
+  .result-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+  }
+
+  .warning-panel {
+    border: 1.5px solid #c0392b;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  .warning-panel p {
+    margin: 0 0 0.75rem;
+  }
+
+  .warning-panel p:last-of-type {
+    margin-bottom: 1rem;
+  }
+
+  .consult-btn {
+    background: #3a5570;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-family: inherit;
+  }
+</style>
+
+<script>
+  const slider = document.getElementById('slider');
+  const tooltip = document.getElementById('tooltip');
+  const propertyInput = document.getElementById('property-value');
+  const equityVal = document.getElementById('equity-val');
+  const loanVal = document.getElementById('loan-val');
+  const loanCard = document.getElementById('loan-card');
+  const warning = document.getElementById('warning');
+
+  function formatEuro(val) {
+    return '€' + Math.round(val).toLocaleString('de-DE');
+  }
+
+  function parseInput(str) {
+    return parseFloat(str.replace(/\./g, '').replace(',', '.')) || 0;
+  }
+
+  function update() {
+    const pct = parseInt(slider.value);
+    const total = parseInput(propertyInput.value);
+    const equity = total * pct / 100;
+    const loan = total - equity;
+    const danger = pct < 20;
+
+    // tooltip
+    tooltip.textContent = pct + '%';
+    const pctPos = pct / 100;
+    const thumbOffset = 9 - (pctPos * 18);
+    tooltip.style.left = `calc(${pctPos * 100}% + ${thumbOffset}px)`;
+
+    // slider color
+    slider.style.setProperty('--pct', pct + '%');
+    slider.className = 'slider' + (danger ? ' danger' : '');
+
+    // track fill via background
+    if (!danger) {
+      slider.style.background = `linear-gradient(to right, #3a7060 0%, #3a7060 ${pct}%, #ddd ${pct}%, #ddd 100%)`;
+    } else {
+      slider.style.background = `linear-gradient(to right, #c0392b 0%, #c0392b ${pct}%, #ddd ${pct}%, #ddd 100%)`;
+    }
+
+    // results
+    equityVal.textContent = formatEuro(equity);
+    loanVal.textContent = formatEuro(loan);
+    loanCard.className = 'result-card' + (danger ? ' danger' : '');
+
+    // warning
+    warning.style.display = danger ? 'block' : 'none';
+  }
+
+  // format input with dots on blur
+  propertyInput.addEventListener('input', () => {
+    update();
+  });
+
+  propertyInput.addEventListener('blur', () => {
+    const raw = parseInput(propertyInput.value);
+    if (raw > 0) propertyInput.value = raw.toLocaleString('de-DE');
+  });
+
+  propertyInput.addEventListener('focus', () => {
+    const raw = parseInput(propertyInput.value);
+    if (raw > 0) propertyInput.value = raw;
+  });
+
+  slider.addEventListener('input', update);
+  update();
+</script>

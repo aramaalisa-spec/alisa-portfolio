@@ -18,17 +18,17 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   experimental: {
-    fonts: [
-      {
-        provider: fontProviders.fontsource(),
-        name: "Space Grotesk",
-        cssVariable: "--font-sans",
-      },
-      {
-        provider: fontProviders.fontsource(),
-        name: "IBM Plex Mono",
-        cssVariable: "--font-mono",
-      },
-    ],
-  },
+  fonts: [
+    {
+      provider: fontProviders.fontsource(),
+      name: "Sofia Sans",
+      cssVariable: "--font-sans",
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Sofia Sans Condensed",
+      cssVariable: "--font-condensed",
+    },
+  ],
+},
 });
