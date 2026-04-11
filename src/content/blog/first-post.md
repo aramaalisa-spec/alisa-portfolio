@@ -6,7 +6,7 @@ description: "The Financing Calculator is a tool we built within the main
   large-scale projects. "
 pubDate: 2026-04-11T15:24:00.000+02:00
 updatedDate: 2026-01-15
-heroImage: ""
+heroImage: /images/video-povestea-celei-mai-batrane-berze-din-romania-are-21-de-ani-si-isi-petrece-verile-in-cuibul-din-bihor.jpg
 author: rodrigo
 tags:
   - astro
