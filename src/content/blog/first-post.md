@@ -6,7 +6,7 @@ description: "The Financing Calculator is a tool we built within the main
   large-scale projects. "
 pubDate: 2026-04-11T15:24:00.000+02:00
 updatedDate: 2026-01-15
-heroImage: /images/cocos.png
+heroImage: ""
 author: rodrigo
 tags:
   - astro
