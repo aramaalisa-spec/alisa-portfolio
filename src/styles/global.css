@@ -52,6 +52,8 @@
 		line-height: 1.6;
 		color: var(--color-ink);
 		background-color: var(--color-paper);
+		background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
+background-size: 16px 16px;
 	} 
 
 	a {
@@ -272,7 +274,7 @@
 	}
 
 	.post-hero-image img {
-		border-radius: var(--radius-card);
+		border-radius: 0;
 		border: 1px solid var(--color-border);
 	}
 
