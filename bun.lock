@@ -10,6 +10,7 @@
         "@astrojs/sitemap": "^3.6.1",
         "@fontsource/sofia-sans": "^5.2.8",
         "@fontsource/sofia-sans-condensed": "^5.2.8",
+        "@fontsource/sofia-sans-semi-condensed": "^5.2.8",
         "@iconify-json/tabler": "^1.2.26",
         "@tailwindcss/typography": "^0.5.19",
         "@tailwindcss/vite": "^4.1.18",
@@ -131,6 +132,8 @@
     "@fontsource/sofia-sans": ["@fontsource/sofia-sans@5.2.8", "", {}, "sha512-cSLX3BtuSyywk7VUArK/GSC+0NwJfUmAg8GMwq8oTPZTG+WVQwoQp+OxIgaWTVzPvv6zGvNOAZGi0WMm1IIAzA=="],
 
     "@fontsource/sofia-sans-condensed": ["@fontsource/sofia-sans-condensed@5.2.8", "", {}, "sha512-q39W+7RIUDUc6EXlTXWBfYck02Rop57MmMSibuodJyss1mk/54ZVokM+wCAMf8EeOc2MUoxRso7jqS6f31IwFA=="],
+
+    "@fontsource/sofia-sans-semi-condensed": ["@fontsource/sofia-sans-semi-condensed@5.2.8", "", {}, "sha512-a+KnHZrX8ReM86qAosGtNRnqME0MTZdFS5Kkpwzk5j1u/foTjBPYattVI5bNUfUMJ2oD8+81LvtK0fawWliJmw=="],
 
     "@iconify-json/tabler": ["@iconify-json/tabler@1.2.26", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-92G+ZD70AZgeJf07JfQzH+isnai6DwPcMBuF/qL1F+xAxdXCJzGd3w2RmsRvOmB+w1ImmWEEDms50QivQIjd6g=="],
 
