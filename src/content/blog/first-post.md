@@ -1,24 +1,22 @@
 ---
 title: Financing Calculator (FC)
-description: "The Financing Calculator is a tool we built within the main
-  membership-based investment platform for ultra-high-net-worth individuals
-  (UHNWIs). It is geared towards wealthy members looking for financing for
-  large-scale projects. "
+description: The Financing Calculator is a tool we built within the main membership-based investment platform for ultra-high-net-worth individuals (UHNWIs). It is geared towards wealthy members looking for financing for large-scale projects.
 pubDate: 2026-04-11T15:24:00.000+02:00
-updatedDate: 2026-01-15
 heroImage: /images/video-povestea-celei-mai-batrane-berze-din-romania-are-21-de-ani-si-isi-petrece-verile-in-cuibul-din-bihor.jpg
 author: rodrigo
+updatedDate: 2026-01-15
 tags:
   - astro
   - intro
 ---
+
 # **Financing Calculator (FC)**
 
 ## **Context**
 
-The Financing Calculator is a tool we built within the main membership-based investment platform for ultra-high-net-worth individuals (UHNWIs). It is geared towards wealthy members looking for financing for large-scale projects. 
+#### The Financing Calculator is a tool we built within the main membership-based investment platform for ultra-high-net-worth individuals (UHNWIs). It is geared towards wealthy members looking for financing for large-scale projects. 
 
-## **Discovery**
+#### **Discovery**
 
 ### **Competitor analysis and market gap**
 
@@ -30,8 +28,8 @@ I mapped existing tools on a Miro board, identifying gaps relevant to UHNWIs, an
 
 The project had 3 internal stakeholders:
 
-* **The CEO** with a family office background and the *big picture* in mind. He shared his experience and understanding of how UHNWIs think about their financing needs. 
-* **The business developers**, who built and maintained relationships with banks. They know how the banks view lending, how they evaluate prospective investments, and what they require to say *yes*.
+* **The CEO** with a family office background and the _big picture_ in mind. He shared his experience and understanding of how UHNWIs think about their financing needs. 
+* **The business developers**, who built and maintained relationships with banks. They know how the banks view lending, how they evaluate prospective investments, and what they require to say _yes_.
 * **The transaction managers,** who are the primary point of contact with members.
 
 A successful product should reconcile three perspectives — have a working UI that serves the needs of members looking for a financing partner, generate useful leads that are attractive to banks and bring revenue, and provide learning for further improvement and development.
@@ -56,7 +54,7 @@ Once the entire system was clear, we assessed the difficulty of every step, I wr
 
 ## **UI design**
 
-\[screenshots, maybe animations, etc.]
+[screenshots, maybe animations, etc.]
 
 We shared an early prototype with our contacts at the banks. The calculator only works if banks are engaged and matches lead to introductions that lead to commissions. Some of the feedback was anticipated and had to be gently pushed back on. Predictably, every bank wanted to be featured prominently with better positioning and more acclaim. However, the calculator's value to users depended entirely on it being neutral. 
 
@@ -64,13 +62,13 @@ How to make our partners feel special and appreciated without playing favourites
 
 Other feedback was useful and frankly surprising. For example, when capturing the address of the eventual investment, we assumed that asking for the city and federal state would be enough to assess the compatibility. In reality, coverage can differ, without exaggeration, for two buildings standing across the street from each other. We had to ask for the entire address (or addresses) down to the postal code. It was a small field, easy to miss, and it could have silently broken the matching for a subset of users without anyone immediately knowing why.
 
-\[Final UI with minimal comments. Eg.:]
+[Final UI with minimal comments. Eg.:]
 
 On the third step, users set their down payment amount. A down payment below 20% would result in unfavourable rates, so rather than processing the input and coming up with poor matches, we warned the prospective borrowers and offered to advise them personally on a more advantageous solution. 
 
 The results page showed at most 4 banks, ordered by match percentage. Any match below 75% was considered a no-go — either the request was too generic, or something made it unattractive to banks. In both cases, the user saw a custom page inviting them to reach out directly. 
 
-*One must acknowledge the limitations of an automated tool.* 
+\*One must acknowledge the limitations of an automated tool.\* 
 
 ## **The how-tos, the what ifs, and the what nows**
 
