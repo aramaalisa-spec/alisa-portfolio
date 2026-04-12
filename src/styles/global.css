@@ -1,10 +1,7 @@
-@import "@fontsource/sofia-sans/300.css";
 @import "@fontsource/sofia-sans/400.css";
-@import "@fontsource/sofia-sans/600.css";
 @import "@fontsource/sofia-sans/700.css";
-@import "@fontsource/sofia-sans-semi-condensed/400.css";
-@import "@fontsource/sofia-sans-semi-condensed/900.css";
-@import "tailwindcss";
+@import "@fontsource/sofia-sans-condensed/400.css";
+@import "@fontsource/sofia-sans-condensed/700.css";@import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
 @theme {
@@ -21,6 +18,8 @@
 	:root {
 		color-scheme: light;
 		background-color: var(--color-paper);
+		background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
+		background-size: 16px 16px;
 		--grid-divisions: 20;
 		--grid-cell: calc(100vw / var(--grid-divisions));
 		--grid-cell-x: var(--grid-cell);
@@ -29,6 +28,15 @@
 		--content-width: calc(var(--grid-cell) * var(--content-columns));
 	}
 
+	:root[data-theme="dark"] {
+		color-scheme: dark;
+		--color-ink: #f5f5f5;
+		--color-muted: color-mix(in oklab, var(--color-ink) 70%, transparent);
+		--color-paper: #0d0d10;
+		--color-surface: #131318;
+		--color-border: color-mix(in oklab, var(--color-ink) 16%, transparent);
+		--grid-line: color-mix(in oklab, var(--color-ink) 10%, transparent);
+	}
 	*,
 	*::before,
 	*::after {
@@ -40,56 +48,11 @@
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
-		font-family: "Sofia Sans", sans-serif;
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 1.2;
+		font-family: "Sofia Sans", sans-serif;;
+		line-height: 1.6;
 		color: var(--color-ink);
 		background-color: var(--color-paper);
-		background-image: radial-gradient(circle, #c8c8c8 1px, transparent 1px);
-		background-size: 24px 24px;
-	}
-
-	h1 {
-		font-family: "Sofia Sans Semi Condensed", sans-serif;
-		font-weight: 900;
-		font-size: 46px;
-		line-height: 1;
-		letter-spacing: -1px;
-	}
-
-	h2 {
-		font-family: "Sofia Sans Semi Condensed", sans-serif;
-		font-weight: 400;
-		font-size: 36px;
-		line-height: 1;
-		letter-spacing: -1px;
-	}
-
-	h3 {
-		font-family: "Sofia Sans", sans-serif;
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 1.2;
-		letter-spacing: 1px;
-		text-transform: uppercase;
-		text-decoration: underline;
-		text-underline-offset: 3px;
-	}
-
-	h4 {
-		font-family: "Sofia Sans", sans-serif;
-		font-weight: 600;
-		font-size: 20px;
-		line-height: 1.2;
-	}
-
-	p, li {
-		font-family: "Sofia Sans", sans-serif;
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 1.2;
-	}
+	} 
 
 	a {
 		color: inherit;
@@ -97,7 +60,7 @@
 	}
 
 	time {
-		font-family: "Sofia Sans", sans-serif;
+  		font-family: "Sofia Sans", sans-serif;
 	}
 
 	.sr-only {
@@ -126,7 +89,7 @@
 }
 
 @layer components {
-	.text-muted {
+ 	.text-muted {
 		color: var(--color-muted);
 	}
 
@@ -138,10 +101,251 @@
 		color: var(--color-ink);
 	}
 
+	.theme-toggle {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		padding: 0.45rem 0.7rem;
+		border: 1px solid var(--color-border);
+		border-radius: 999px;
+		font-size: 0.72rem;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		background: color-mix(in oklab, var(--color-surface) 94%, transparent);
+		cursor: pointer;
+		transition: border-color 120ms ease, background-color 120ms ease;
+	}
+
+	.theme-toggle:hover {
+		border-color: color-mix(in oklab, var(--color-ink) 28%, transparent);
+		background: color-mix(in oklab, var(--color-ink) 6%, var(--color-surface));
+	}
+
+	.theme-toggle__dot {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border-radius: 999px;
+		border: 1px solid var(--color-ink);
+		background: var(--color-surface);
+
+		
+	}
+
 	.site-shell {
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
 		border: 1px solid var(--color-border);
+		border-radius: 28px;
+		background: var(--color-surface);
 	}
+
+	.site-header {
+		height: calc(var(--grid-cell) / 2);
+		min-height: calc(var(--grid-cell) / 2);
+		display: flex;
+		align-items: center;
+		padding-left: calc(var(--grid-cell) / 2);
+		padding-right: calc(var(--grid-cell) / 2);
+	}
+
+	@media (max-width: 720px) {
+	  .site-header {
+		min-height: calc(var(--grid-cell) * 2);
+		padding-left: calc(var(--grid-cell) / 1);
+		padding-right: calc(var(--grid-cell) / 1);
+	  }
+	}
+
+	.hero {
+		display: grid;
+		gap: 0.75rem;
+		padding-bottom: 1.5rem;
+		border-bottom: 1px solid var(--color-border);
+		max-width: 780px;
+	}
+
+	.hero h1 {
+		font-size: clamp(2.25rem, 4vw, 3.25rem);
+		line-height: 1.1;
+		margin: 0;
+	}
+
+	.hero p {
+		margin: 0;
+		color: var(--color-muted);
+		max-width: 60ch;
+	}
+
+	.eyebrow {
+		letter-spacing: 0.38em;
+		text-transform: uppercase;
+		font-size: 0.65rem;
+		color: var(--color-muted);
+	}
+
+	.page-nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		align-items: center;
+	}
+
+	.button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.35rem;
+		padding: 0.65rem 1.1rem;
+		border-radius: 999px;
+		border: 1px solid var(--color-border);
+		font-weight: 600;
+		font-size: 0.75rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		background: color-mix(in oklab, var(--color-surface) 92%, transparent);
+		transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease,
+			transform 150ms ease;
+	}
+
+	.button.primary {
+		background: var(--color-ink);
+		color: var(--color-surface);
+		border-color: var(--color-ink);
+	}
+
+	.button.secondary {
+		background: color-mix(in oklab, var(--color-ink) 6%, var(--color-surface));
+		color: var(--color-ink);
+	}
+
+	.button:hover {
+		transform: translateY(-1px);
+		border-color: color-mix(in oklab, var(--color-ink) 28%, transparent);
+	}
+
+	.card,
+	.post-card {
+		border: 1px solid var(--color-border);
+		background: var(--color-surface);
+		border-radius: var(--radius-card);
+		padding: 1.25rem;
+	}
+
+	.post-card {
+		transition: transform 150ms ease;
+	}
+
+	.post-card:hover {
+		transform: translateY(-2px);
+	}
+
+	.post-card-date,
+	.post-meta {
+		color: var(--color-muted);
+		font-size: 0.9rem;
+	}
+
+	.section-heading {
+		display: grid;
+		gap: 0.4rem;
+	}
+
+	.section-heading h1 {
+		margin: 0;
+		font-size: clamp(2.2rem, 3.6vw, 2.8rem);
+		line-height: 1.1;
+	}
+
+	.post-page {
+		display: grid;
+		gap: 2rem;
+	}
+
+	.content-shell {
+		width: 100%;
+		max-width: var(--content-width);
+		margin: 0 auto;
+		padding-left: calc(var(--grid-cell) / 2);
+		padding-right: calc(var(--grid-cell) / 2);
+	}
+
+	.post-hero-image img {
+		border-radius: var(--radius-card);
+		border: 1px solid var(--color-border);
+	}
+
+	.post-article {
+		display: grid;
+		gap: 1.25rem;
+		color: var(--color-ink);
+	}
+
+	.post-article p {
+		margin: 0;
+		color: var(--color-muted);
+	}
+
+	.post-article h2,
+	.post-article h3 {
+		margin: 0.25rem 0;
+		line-height: 1.2;
+
+	
+	}
+	/* Blog article typography */
+.post-article h1 {
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin: 0 0 0.5rem;
+}
+
+.post-article h2 {
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.post-article h3 {
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.post-article h4 {
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 1rem 0 0.25rem;
+}
+
+.post-article p {
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color-ink);
+    margin: 0 0 1rem;
+}
+
+.post-article li {
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+}	
 }
