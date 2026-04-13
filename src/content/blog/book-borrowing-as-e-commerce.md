@@ -2,7 +2,7 @@
 title: 'Book borrowing as e-commerce:'
 description: How a more transparent borrowing experience made reading easier
 pubDate: 2026-04-11T19:58:00
-heroImage: /uploads/blue post-it.png
+heroImage: /uploads/blue post-it S.png
 ---
 
 Bookster is a modern online/offline  library working in a B2B2C model.
