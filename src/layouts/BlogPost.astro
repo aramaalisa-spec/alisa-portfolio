@@ -36,7 +36,11 @@ const { title, description, pubDate, updatedDate, heroImage, tags = [], Content 
                 )}
         </header>
 
-       
+        {heroImage && (
+            <figure class="post-hero-image">
+                <Image width={1020} height={510} src={heroImage} alt="" />
+            </figure>
+        )}
 
         <section class="post-article">
             <Prose>
