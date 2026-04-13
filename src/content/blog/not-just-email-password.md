@@ -40,7 +40,7 @@ Signup flowchart for a Wealth Owner / Family Officer:
 
 ### **Challenges and learnings:**
 
-    - **Stakeholder vs UX best practices.** Member managers have legitimate reasons to request more information, as additional data points mean fewer gaps and less back-and-forth. But every form field is a cost the user bears, before they can even get anything in return. 
+- **Stakeholder vs UX best practices.** Member managers have legitimate reasons to request more information, as additional data points mean fewer gaps and less back-and-forth. But every form field is a cost the user bears, before they can even get anything in return. 
 - **A complex “source of truth”.** Some information appeared in the CRM twice, because what prospective members wrote about themselves was not always accurate or constructive. It matters where the information came from: direct disclosure, a self-assessment, or a subsequent correction.
 - **The Norman Door problem.** Usability testing is both humbling and perplexing. Watching someone navigate a form that seemed “simple” and “clear” to us was very insightful. One should not rely on tooltips or copy to clarify an unconventional pattern. 
 
