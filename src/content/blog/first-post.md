@@ -16,7 +16,8 @@ tags:
 
 #### The Financing Calculator is a tool we built within the main membership-based investment platform for ultra-high-net-worth individuals (UHNWIs). It is geared towards wealthy members looking for financing for large-scale projects. 
 
-![](/uploads/NoDX-03.jpg)
+
+#### ![](/uploads/NoDX-03.jpg)
 
 #### **Discovery**
 
