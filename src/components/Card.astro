@@ -14,7 +14,7 @@ interface Props {
 
 const { title, href, description, image, imageAlt = '', eyebrow } = Astro.props as Props;
 
-const articleClass = 'cursor-pointer group relative grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-start p-5 transition duration-300 ease-in-out hover:-translate-y-1 focus-within:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-border'
+const articleClass = 'cursor-pointer self-start group relative grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-start p-5 transition duration-300 ease-in-out hover:-translate-y-1 focus-within:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-border';
 const isExternal = /^https?:\/\//.test(href) || href.startsWith('//');
 const aProps = { href, 'aria-label': `Ver ${title}`, ...(isExternal ? { rel: 'noopener noreferrer' } : {}) };
 ---
