@@ -9,8 +9,9 @@ heroImage: /uploads/yellow post-it L2.png
 
 ## The inherent complexity of an application-based onboarding
 
-Skyland Family is a membership-based investment platform for family offices and wealthy individuals.
+#### Skyland Family is a membership-based investment platform for family offices and wealthy individuals.
 While industry best practice is to reduce friction at signup, any complex registration form that requires reviewing every applicant comes with trade-offs. For a community founded on trust and integrity, carefully reviewing every prospective member is paramount.
+
 
 ### The main challenges of the project:
 
