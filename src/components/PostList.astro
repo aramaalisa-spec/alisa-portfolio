@@ -63,9 +63,9 @@ const visiblePosts = typeof limit === "number" ? posts.slice(0, limit) : posts;
 <section class="content-shell">
     <div>
         <div
-            class="grid grid-cols-1 gap-y-24 md:grid-cols-3 border-b py-24 border-base-200"
+            class="grid grid-cols-1 gap-y-8 md:grid-cols-3 border-b py-24 border-base-200"
         >
-            <div class="lg:sticky lg:top-24 lg:z-40 self-start">
+            <div class="lg:sticky lg:top-2 lg:z-12 self-start">
                 <h2
                     class="text-sm 2xl:text-xl text-base-900 font-bold uppercase"
                 >
@@ -74,7 +74,7 @@ const visiblePosts = typeof limit === "number" ? posts.slice(0, limit) : posts;
             </div>
 
             <div
-                class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-y-20 gap-x-8"
+                class="lg:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-4"
             >
                 {
                     visiblePosts.map((post) => {
