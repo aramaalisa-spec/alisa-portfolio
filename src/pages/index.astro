@@ -19,7 +19,7 @@ const site = await getSite();
 		role={site.author.role}
 		location={site.author.location}
 		actions={[
-			{ label: 'Portfolio', href: '/blog' },
+			{ label: 'My work', href: '/blog' },
 			{ label: 'Resume', href: 'https://resume.domain.com' },
 		]}
 	/>
@@ -27,7 +27,7 @@ const site = await getSite();
 	
 
 	<PostList
-		heading="Portfolio"
+		heading="My work"
 		limit={6}
 		viewAllHref="/blog"
 	/>
