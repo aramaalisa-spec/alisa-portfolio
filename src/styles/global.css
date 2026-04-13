@@ -22,8 +22,6 @@
 	:root {
 		color-scheme: light;
 		background-color: var(--color-paper);
-		background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
-		background-size: 16px 16px;
 		--grid-divisions: 20;
 		--grid-cell: calc(100vw / var(--grid-divisions));
 		--grid-cell-x: var(--grid-cell);
@@ -41,6 +39,7 @@
 		--color-border: color-mix(in oklab, var(--color-ink) 16%, transparent);
 		--grid-line: color-mix(in oklab, var(--color-ink) 10%, transparent);
 	}
+
 	*,
 	*::before,
 	*::after {
@@ -52,13 +51,13 @@
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
-		font-family: "Sofia Sans", sans-serif;;
+		font-family: "Sofia Sans", sans-serif;
 		line-height: 1.6;
 		color: var(--color-ink);
 		background-color: var(--color-paper);
 		background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
-background-size: 16px 16px;
-	} 
+		background-size: 16px 16px;
+	}
 
 	a {
 		color: inherit;
@@ -66,7 +65,7 @@ background-size: 16px 16px;
 	}
 
 	time {
-  		font-family: "Sofia Sans", sans-serif;
+		font-family: "Sofia Sans", sans-serif;
 	}
 
 	.sr-only {
@@ -95,7 +94,7 @@ background-size: 16px 16px;
 }
 
 @layer components {
- 	.text-muted {
+	.text-muted {
 		color: var(--color-muted);
 	}
 
@@ -134,8 +133,6 @@ background-size: 16px 16px;
 		border-radius: 999px;
 		border: 1px solid var(--color-ink);
 		background: var(--color-surface);
-
-		
 	}
 
 	.site-shell {
@@ -157,11 +154,11 @@ background-size: 16px 16px;
 	}
 
 	@media (max-width: 720px) {
-	  .site-header {
-		min-height: calc(var(--grid-cell) * 2);
-		padding-left: calc(var(--grid-cell) / 1);
-		padding-right: calc(var(--grid-cell) / 1);
-	  }
+		.site-header {
+			min-height: calc(var(--grid-cell) * 2);
+			padding-left: calc(var(--grid-cell) / 1);
+			padding-right: calc(var(--grid-cell) / 1);
+		}
 	}
 
 	.hero {
@@ -288,70 +285,63 @@ background-size: 16px 16px;
 		color: var(--color-ink);
 	}
 
-	.post-article p {
-		margin: 0;
-		color: var(--color-muted);
+	/* ── Blog prose typography ───────────────────────────────────────────────
+	   Using :where() selectors to match Tailwind Typography's specificity
+	   so these override the prose defaults cleanly.
+	──────────────────────────────────────────────────────────────────────── */
+
+	.prose :where(h1):not(:where([class~="not-prose"] *)) {
+		font-family: "Sofia Sans Semi Condensed", sans-serif;
+		font-weight: 900;
+		font-size: 46px;
+		line-height: 1;
+		letter-spacing: -1px;
 	}
 
-	.post-article h2,
-	.post-article h3 {
-		margin: 0.25rem 0;
+	.prose :where(h2):not(:where([class~="not-prose"] *)) {
+		font-family: "Sofia Sans Semi Condensed", sans-serif;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 1;
+		letter-spacing: -1px;
+	}
+
+	.prose :where(h3):not(:where([class~="not-prose"] *)) {
+		font-family: "Sofia Sans", sans-serif;
+		font-weight: 700;
+		font-size: 18px;
 		line-height: 1.2;
-
-	
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		text-decoration: underline;
+		text-underline-offset: 3px;
 	}
-	/* Blog article typography */
-.post-article h1 {
-    font-family: "Sofia Sans Semi Condensed", sans-serif;
-    font-weight: 900;
-    font-size: 46px;
-    line-height: 1;
-    letter-spacing: -1px;
-    margin: 0 0 0.5rem;
-}
 
-.post-article h2 {
-    font-family: "Sofia Sans Semi Condensed", "Sofia Sans", sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1;
-    letter-spacing: -1px;
-    margin: 1.5rem 0 0.5rem;
-}
+	.prose :where(h4):not(:where([class~="not-prose"] *)) {
+		font-family: "Sofia Sans", sans-serif;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 1.2;
+	}
 
-.post-article h3 {
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    margin: 1.5rem 0 0.5rem;
-}
+	.prose :where(p):not(:where([class~="not-prose"] *)),
+	.prose :where(li):not(:where([class~="not-prose"] *)) {
+		font-family: "Sofia Sans", sans-serif;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 1.6;
+		color: var(--color-ink);
+	}
 
-.post-article h4 {
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    margin: 1rem 0 0.25rem;
+	.prose :where(strong):not(:where([class~="not-prose"] *)) {
+		font-weight: 700;
+	}
 }
-
-.post-article p {
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.2;
-    color: var(--color-ink);
-    margin: 0 0 1rem;
-}
-
-.post-article li {
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.2;
-}	
+@layer utilities {
+    .prose h1 { font-family: "Sofia Sans Semi Condensed", sans-serif; font-weight: 900; font-size: 46px; line-height: 1; letter-spacing: -1px; }
+    .prose h2 { font-family: "Sofia Sans Semi Condensed", sans-serif; font-weight: 400; font-size: 36px; line-height: 1; letter-spacing: -1px; }
+    .prose h3 { font-family: "Sofia Sans", sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: underline; text-underline-offset: 3px; }
+    .prose h4 { font-family: "Sofia Sans", sans-serif; font-weight: 600; font-size: 20px; line-height: 1.2; }
+    .prose p, .prose li { font-family: "Sofia Sans", sans-serif; font-weight: 300; font-size: 16px; line-height: 1.6; }
+    .prose strong { font-weight: 700; }
 }
