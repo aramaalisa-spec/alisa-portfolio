@@ -2,7 +2,7 @@
 title: Financing Calculator (FC)
 description: The Financing Calculator is a tool we built within the main membership-based investment platform for ultra-high-net-worth individuals (UHNWIs). It is geared towards wealthy members looking for financing for large-scale projects.
 pubDate: 2026-04-11T15:24:00.000+02:00
-heroImage: /images/video-povestea-celei-mai-batrane-berze-din-romania-are-21-de-ani-si-isi-petrece-verile-in-cuibul-din-bihor.jpg
+heroImage: /uploads/transparent frame.png
 author: rodrigo
 updatedDate: 2026-01-15
 tags:
@@ -17,7 +17,6 @@ tags:
 #### The Financing Calculator is a tool we built within the main membership-based investment platform for ultra-high-net-worth individuals (UHNWIs). It is geared towards wealthy members looking for financing for large-scale projects. 
 
 #### ![](/uploads/NoDX-03.jpg)
-
 
 ## Discovery
 
