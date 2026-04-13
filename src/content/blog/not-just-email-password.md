@@ -33,4 +33,4 @@ While industry best practice is to reduce friction at signup, any complex regist
 - Hand off the final designs to the development team; 
 - Maintain the backlog, plan the sprints.
 
-![](/uploads/Signup%20Flowchart%20narrow2.png)
+![](/uploads/Signup%20Flowchart%20narrow3.png)
