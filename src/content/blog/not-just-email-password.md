@@ -13,6 +13,9 @@ heroImage: /uploads/not just email.png
 
 #### While industry best practice is to reduce friction at signup, any complex registration form that requires reviewing every applicant comes with trade-offs. For a community founded on trust and integrity, carefully reviewing every prospective member is paramount.
 
+![](/uploads/forms.png)
+
+
 ### The main challenges of the project:
 
 - Several types of memberships entail complex flows for one feature;
