@@ -286,6 +286,9 @@
 		display: grid;
 		gap: 1.25rem;
 		color: var(--color-ink);
+		overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 0;
 	}
 
 	/* ── Blog prose typography ───────────────────────────────────────────────

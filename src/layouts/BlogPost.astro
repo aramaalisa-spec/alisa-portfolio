@@ -23,8 +23,8 @@ const { title, description, pubDate, updatedDate, heroImage, tags = [], Content 
     <div class="flex-1 flex flex-col py-12 md:py-16 lg:py-20 space-y-16">
     <article class="post-page max-w-4xl w-full mx-auto">
         <header class="section-heading">
-          
             
+            </p>
                 {tags.length > 0 && (
                     <ul class="mt-2 flex flex-wrap gap-2 text-sm text-muted">
                         {tags.map((tag) => (
@@ -36,13 +36,9 @@ const { title, description, pubDate, updatedDate, heroImage, tags = [], Content 
                 )}
         </header>
 
-        {heroImage && (
-            <figure class="post-hero-image">
-                <Image width={1020} height={510} src={heroImage} alt="" />
-            </figure>
-        )}
+        
 
-        <section class="post-article">
+        <section class="post-article w-full min-w-0">
             <Prose>
                 {Content ? <Content /> : <slot />}
             </Prose>
