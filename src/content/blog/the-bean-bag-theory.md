@@ -2,7 +2,7 @@
 title: The Bean Bag Theory
 description: You are not your user, until you are
 pubDate: 2026-04-13T23:36:00
-heroImage: /uploads/app photo.png
+heroImage: /uploads/coffee photo2.png
 ---
 
 # The Bean Bag Theory: coffee tracking taken seriously
@@ -13,7 +13,7 @@ heroImage: /uploads/app photo.png
 
 I decided that this is a perfect use-case for vibe-coding.
 
-![](/uploads/app%20photo.png)
+![](/uploads/coffee%20photo2.png)
 
 ### **Goals:**
 
