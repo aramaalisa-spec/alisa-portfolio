@@ -55,3 +55,9 @@ But...
 2. Everything runs locally, so I didn’t have to keep track of vulnerabilities that would be unacceptable in real life.
 3. To make it work, it was enough to have a very rudimentary UI component library and just a handful of tokens in Figma, with no proper documentation.
 4. There was no discovery, no usability testing, and no KPIs.
+
+__________________________________________
+
+Thanks Claude, Figma, and Notion for working so well together.
+
+![](/uploads/logos.png)
