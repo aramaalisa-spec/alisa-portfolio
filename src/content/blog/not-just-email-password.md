@@ -17,7 +17,7 @@ heroImage: /uploads/not just email.png
 
 ![](/uploads/classic%20signup%20flow.png)
 
-### Why this approach failed?
+### Why this approach failed:
 
 Precisely because the pattern was so predictable, creating a username and a password triggered the "my account has been created, I am in" perception, which was false.
 
