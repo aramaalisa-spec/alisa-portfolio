@@ -11,9 +11,9 @@ heroImage: /uploads/not just email.png
 
 #### Skyland Family is a membership-based investment platform for family offices and wealthy individuals.
 
-#### While industry best practice is to reduce friction at signup, any complex registration form that requires reviewing every applicant comes with trade-offs. For a community founded on trust and integrity, carefully reviewing every prospective member is paramount.
+#### While industry best practice is to reduce friction at signup, any complex registration form that requires applicant evaluation comes with trade-offs. For a community founded on trust and integrity, carefully considering every prospective member is paramount.
 
-![](/uploads/forms.png)
+![](/uploads/classic%20signup%20flow.png)
 
 ### The main challenges of the project:
 
