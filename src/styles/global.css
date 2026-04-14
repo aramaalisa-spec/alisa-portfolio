@@ -350,7 +350,7 @@
     .prose h4 { font-family: "Sofia Sans", sans-serif; font-weight: 600; font-size: 20px; line-height: 1.2; }
     .prose p, .prose li { font-family: "Sofia Sans", sans-serif; font-weight: 300; font-size: 16px; line-height: 1.6; }
     .prose strong { font-weight: 700; }
-	.prose { max-width: 900px; }
+	.prose { max-width: 780px; }
 	.prose h1 { margin-bottom: 0.75rem; }
 	.prose h2 { margin-top: 0.25rem; margin-bottom: 2rem; }
 	.prose h3 { margin-top: 0.15rem; margin-bottom: 1.5rem; }
