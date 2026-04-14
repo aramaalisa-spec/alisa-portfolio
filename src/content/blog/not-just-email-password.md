@@ -23,7 +23,7 @@ heroImage: /uploads/not just email.png
 
 #### It looked simple enough at first, a predictable pattern:
 
-![](/uploads/classic%20signup%20flow.png)
+![](/uploads/classic%20signup%20flow%202.png)
 
 ### Why this approach failed:
 
@@ -35,7 +35,7 @@ It was, of course, not a bug but the core dysfunction of the overall signup flow
 
 ### Key distinction:
 
-![](/uploads/yellow%20post-it%20L2.png)
+![](/uploads/Password%20last%202.png)
 
 Moving the logical last step of a classig signup pattern 
 
