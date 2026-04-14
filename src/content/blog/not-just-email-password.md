@@ -46,4 +46,11 @@ Signup flowchart for a Wealth Owner / Family Officer:
 
 ## Language as a design decision
 
-#### Many legal terms in Germany and across the DACH region lack accurate English equivalents. A linguistic patchwork within a single form seemed to be terrible UX. Research, however, proved my intuition wrong: even English-speaking members were familiar with and even preferred precise German legal terms over ambiguous approximations.
+#### Many legal terms in Germany and across the DACH region lack accurate English equivalents. A linguistic patchwork within a single form seemed to be terrible UX. 
+
+
+
+![](/uploads/Apply%20as%20foundation%20language%20warning.png)
+
+
+#### Research, however, proved my intuition wrong: even English-speaking members were familiar with and even preferred precise German legal terms over ambiguous approximations.
