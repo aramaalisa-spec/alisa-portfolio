@@ -7,11 +7,13 @@ heroImage: /uploads/coffee photo2.png
 
 # The Bean Bag Theory: coffee tracking taken seriously
 
+## They say you are not your user. Until you are, I say.
+
 #### As a coffee drinker, I’ve been dreaming of an app where I can easily log the beans I try, record taste notes, grade, and document my coffee journey.
 
 #### No KPIs, no monetisation.
 
-I decided that this is a perfect use-case for vibe-coding.
+#### I decided that this is a perfect use-case for vibe-coding.
 
 ![](/uploads/coffee%20photo2.png)
 
@@ -46,7 +48,7 @@ Besides, proper components, colours, tokens, and naming had to be set up.
 
 #### Two days later, I had a functional PWA that works as intended. As its sole user, I would 100% recommend it.
 
-Vibe-coding feels empowering and delivers tangible, functional results. 
+#### Vibe-coding feels empowering and delivers tangible, functional results. 
 But...
 
 ### Why this is not real design:
