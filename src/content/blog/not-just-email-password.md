@@ -5,10 +5,9 @@ pubDate: 2026-04-12T10:59:00
 heroImage: /uploads/not just email.png
 ---
 
-# Not Just _Email & Password:
+# Not Just  _Email & Password:_
 
 ## The inherent complexity of an application-based onboarding
-
 
 #### Skyland Family is a membership-based investment platform for family offices and wealthy individuals.
 
