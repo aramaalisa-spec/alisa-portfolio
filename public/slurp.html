@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 160px;
+    }
+    .wave-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wave-letter {
+      display: inline-block;
+      font-family: 'Boldonse', cursive;
+      font-size: 72px;
+      color: #FF4B00;
+      animation: wave 1.4s ease-in-out infinite;
+      line-height: 1;
+    }
+    @keyframes wave {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wave-wrap" id="container"></div>
+  <script>
+    const text = 'slurp...';
+    const container = document.getElementById('container');
+    text.split('').forEach((ch, i) => {
+      const span = document.createElement('span');
+      span.className = 'wave-letter';
+      span.textContent = ch === '\u0020' ? '\u00A0' : ch;
+      span.style.animationDelay = (i * 0.1) + 's';
+      container.appendChild(span);
+    });
+  </script>
+</body>
+</html>
