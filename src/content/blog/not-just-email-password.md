@@ -37,9 +37,7 @@ It was, of course, not a bug but the core dysfunction of the overall signup flow
 
 ![](/uploads/Password%20last%202.png)
 
-Moving the logical last step of a classig signup pattern 
-
-### 
+#### The password creation step carries a strong signal: _I have an account, I am in._ Placing it after approval meant that the signal fired at exactly the right moment, precisely when a person could close the signup loop and finally access the platform .
 
 Signup flowchart for a Wealth Owner / Family Officer:
 
