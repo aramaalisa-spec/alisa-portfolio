@@ -13,6 +13,16 @@ Memberships are offered as employment benefits by the best Romanian companies.
 - **Improve usability.**  Poor management of book editions resulted in unclear delivery dates for subscribers. It caused frustration and repeated support tickets.
 - \*\*Feature addition: Delivery to pick-up point.\*\* Books could previously only be delivered to the subscriber’s workplace. With work-from-home on the rise, giving subscribers more flexibility is key. 
 
+<iframe
+  src="/widgets/pickup-modal.html"
+  width="668"
+  height="490"
+  frameborder="0"
+  scrolling="no"
+  title="Bookster pick-up location selector"
+  style="border: none; display: block; border-radius: 12px;"
+></iframe>
+
 **Teams and constraints:**
 
 - **Logistics:** revealed how the new location will be integrated into existing delivery routes and schedules, and how legacy bookshelf capacity management will affect new locations.
