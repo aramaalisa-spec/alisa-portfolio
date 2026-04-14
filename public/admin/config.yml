@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: aramaalisa-spec/alisa-portfolio
-  branch: content
+  branch: main
 
 media_folder: public/uploads
 public_folder: /uploads
