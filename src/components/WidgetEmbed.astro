@@ -1,0 +1,54 @@
+---
+// src/components/WidgetEmbed.astro
+interface Props {
+  src: string;
+  width?: number;
+  height?: number;
+  title?: string;
+}
+const { src, width = 668, height = 490, title = "Interactive widget" } = Astro.props;
+---
+
+<div class="widget-wrap" style={`--w:${width}px; --h:${height}px;`}>
+  <iframe
+    src={src}
+    width={width}
+    height={height}
+    frameborder="0"
+    scrolling="no"
+    {title}
+  ></iframe>
+</div>
+
+<style>
+  .widget-wrap {
+    width: 100%;
+    max-width: var(--w);
+    margin: 2rem 0;
+    /* Height tracks the scaled iframe so the page flow is correct */
+    height: var(--h);
+  }
+  .widget-wrap iframe {
+    width: var(--w);
+    height: var(--h);
+    border: none;
+    display: block;
+    transform-origin: top left;
+  }
+</style>
+
+<script>
+  document.querySelectorAll(".widget-wrap").forEach((wrap) => {
+    const iframe = wrap.querySelector("iframe");
+    if (!iframe) return;
+    const W = iframe.width;   // natural width from attribute
+    const H = iframe.height;  // natural height
+    function scale() {
+      const s = Math.min(1, wrap.clientWidth / W);
+      iframe.style.transform = `scale(${s})`;
+      wrap.style.height = H * s + "px";
+    }
+    scale();
+    window.addEventListener("resize", scale);
+  });
+</script>
