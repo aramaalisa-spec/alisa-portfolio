@@ -21,13 +21,13 @@ heroImage: /uploads/not just email.png
 4. **Hand off** the final designs to the development team; 
 5. Maintain the **backlog**, plan the **sprints**.
 
-#### It looked simple enough at first, a predictable pattern:
+#### It looked simple enough at first:
 
 ![](/uploads/classic%20signup%20flow%202.png)
 
 ### Why this approach failed:
 
-Precisely because the pattern was so predictable, creating a username and a password triggered the "my account has been created, _I am in_" perception, which was false.
+Precisely because the pattern was so familiar, creating a username and a password triggered the "my account has been created, _I am in_" perception, which was false.
 
 I witnessed users try to log in repeatedly, thinking that being stuck on a screen that instructed them to continue the application process was a bug. They expected to immediately access the investment platform, regardless of the copy on the screen. 
 
@@ -37,7 +37,8 @@ It was, of course, not a bug but the core dysfunction of the overall signup flow
 
 ![](/uploads/Password%20last%202.png)
 
-#### The password creation step carries a strong signal: _I have an account, I am in._ Placing it after approval meant that the signal fired at exactly the right moment, precisely when a person could close the signup loop and finally access the platform .
+#### The password creation step carries a strong signal: _I have an account, I am in._ Placing it after approval meant that the signal fired at exactly the right moment, precisely when a person could close the signup loop and finally access the platform.
+
 
 Signup flowchart for a Wealth Owner / Family Officer:
 
@@ -55,6 +56,8 @@ Signup flowchart for a Wealth Owner / Family Officer:
 - Several types of memberships entail complex flows for one feature;
 - Different stakeholders have different needs;
 - Backend complexity.
+
+![](/uploads/Application%20screens.png)
 
 ### 
 
@@ -76,7 +79,7 @@ Registering as a philanthropic organisation had by far the most complex flow, be
 
 ### ![](/uploads/Mitigate%20hurdles%20foundations.png)
 
-## **Surprises and learnings:**
+## Surprises and learnings:
 
 - **Stakeholder vs UX best practices.** Member managers have legitimate reasons to request more information, as additional data points mean fewer gaps and less back-and-forth. But every form field is a cost the user bears, before they can even get anything in return. 
 - **A complex “source of truth”.** Some information appeared in the CRM twice, because what prospective members wrote about themselves was not always accurate or constructive. It matters where the information came from: direct disclosure, a self-assessment, or a subsequent correction.
