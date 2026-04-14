@@ -13,7 +13,17 @@ heroImage: /uploads/not just email.png
 
 #### While industry best practice is to reduce friction at signup, any complex registration form that requires applicant evaluation comes with trade-offs. For a community founded on trust and integrity, carefully considering every prospective member is paramount.
 
+#### It looked simple enough at first, a predictable pattern:
+
 ![](/uploads/classic%20signup%20flow.png)
+
+### Why this approach failed?
+
+Precisely because the pattern was so predictable, creating a username and a password triggered the "my account has been created, I am in" perception, which was false.
+
+I witnessed users try to log in repeatedly, thinking that being stuck on a screen that instructed them to continue the application process was a bug. They expected to immediately access the investment platform, regardless of the copy on the screen. 
+
+It was, of course, not a bug but the first step in a complex signup flow. 
 
 ### The main challenges of the project:
 
