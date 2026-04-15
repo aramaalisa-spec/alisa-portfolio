@@ -2,7 +2,7 @@
 title: The Bean Bag Theory PWA
 description: Coffee tracking taken seriously
 pubDate: 2026-04-13T23:36:00
-heroImage: /uploads/books are on the way cover tiny.png
+heroImage: /uploads/books are on the way cover narrow.png
 ---
 
 # The Bean Bag Theory: coffee tracking taken seriously
