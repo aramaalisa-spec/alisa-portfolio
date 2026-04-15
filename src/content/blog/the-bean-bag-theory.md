@@ -2,7 +2,7 @@
 title: The Bean Bag Theory PWA
 description: Coffee tracking taken seriously
 pubDate: 2026-04-13T23:36:00
-heroImage: /uploads/app photo.png
+heroImage: /uploads/coffee photo left aligned (1).png
 ---
 
 # The Bean Bag Theory: coffee tracking taken seriously
