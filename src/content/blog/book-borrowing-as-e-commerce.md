@@ -18,6 +18,8 @@ heroImage: /uploads/books are on the way cover narrow.png
 - **Improve usability.**  Poor management of book editions resulted in unclear delivery dates for subscribers. It caused frustration and repeated support tickets.
 - **Feature addition: Delivery to pick-up point**. Books could previously only be delivered to the subscriber’s workplace. With work-from-home on the rise, giving subscribers more flexibility is key. 
 
+![](/uploads/Book%20Pagewhole%20tiny.png)
+
 #### Try it! 
 
 <p>
