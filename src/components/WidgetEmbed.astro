@@ -24,7 +24,7 @@ const { src, width = 668, height = 490, title = "Interactive widget" } = Astro.p
   .widget-wrap {
     width: 100%;
     max-width: var(--w);
-    margin: 2rem 0;
+    margin: 3rem 0;
     /* Height tracks the scaled iframe so the page flow is correct */
     height: var(--h);
   }
@@ -34,6 +34,9 @@ const { src, width = 668, height = 490, title = "Interactive widget" } = Astro.p
     border: none;
     display: block;
     transform-origin: top left;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10), 0 1px 4px rgba(0, 0, 0, 0.06);
+
   }
 </style>
 
