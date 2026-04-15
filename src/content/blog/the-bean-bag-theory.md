@@ -1,8 +1,8 @@
 ---
-title: The Bean Bag Theory
-description: You are not your user, until you are
+title: The Bean Bag Theory PWA
+description: Coffee tracking taken seriously
 pubDate: 2026-04-13T23:36:00
-heroImage: /uploads/coffee photo2.png
+heroImage: /uploads/books are on the way cover tiny.png
 ---
 
 # The Bean Bag Theory: coffee tracking taken seriously
@@ -49,6 +49,7 @@ Besides, proper components, colours, tokens, and naming had to be set up.
 #### Two days later, I had a functional PWA that works as intended. As its sole user, I would 100% recommend it.
 
 #### Vibe-coding feels empowering and delivers tangible, functional results. 
+
 But...
 
 ### Why this is not real design:
