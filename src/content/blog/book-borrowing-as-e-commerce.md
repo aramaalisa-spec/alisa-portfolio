@@ -32,6 +32,22 @@ heroImage: /uploads/books are on the way cover narrow.png
 
 ![](/uploads/Borrow%20Better.png)
 
+![](/uploads/Borrow%20better%20wire.png)
+
+### Best, also known as future-proof:
+
+![](/uploads/Borrow%20Best%20wire.png)
+
+However, 
+
+![](/uploads/Pushback.png)
+
+Advantages:
+
+- 
+
+Context:
+
 ![](/uploads/Book%20Pagewhole%20tiny.png)
 
 #### Try it! 
