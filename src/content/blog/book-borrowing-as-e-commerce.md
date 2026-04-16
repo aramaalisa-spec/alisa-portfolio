@@ -63,7 +63,7 @@ In addition to the significant improvement of the borrowing experience, edition 
 
 
 
-<div style="width: 100%; overflow: hidden; border-radius: 12px;">
+<div class="hidden md:block" style="width: 100%; overflow: hidden; border-radius: 12px;">
   <iframe
     src="/widgets/pickup-modal.html"
     width="668"
