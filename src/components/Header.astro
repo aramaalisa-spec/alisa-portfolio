@@ -4,10 +4,17 @@ import HeaderLink from "./HeaderLink.astro";
 import SearchModal from "./SearchModal.astro";
 
 const site = await getSite();
+const isHome = Astro.url.pathname === '/';  // ADD THIS
 ---
 
-<header class="site-header">
+<header class="site-header relative">
+  {!isHome && (
+    <a href="/" class="absolute left-5rem top-1/2 -translate-y-1/2">
+      <img src="/logo.svg" alt="Alisa Arama" class="h-16 w-auto" />
+    </a>
+  )}
   <nav class="h-full w-full flex items-center justify-end">
+    
     <button
       id="nav-toggle"
       aria-label="Toggle navigation"
@@ -30,7 +37,7 @@ const site = await getSite();
       <div class="flex flex-col gap-2 items-start text-xs 2xl:text-lg hover:text-base-500 font-bold uppercase">
         <HeaderLink href="/">Home</HeaderLink>
         <HeaderLink href="/blog">Portfolio</HeaderLink>
-        <HeaderLink href="/about">About</HeaderLink>
+        <HeaderLink href="/about">About me</HeaderLink>
         <HeaderLink href="/downloads">Downloads</HeaderLink>
         
       </div>
