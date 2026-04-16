@@ -13,8 +13,8 @@ heroImage: /uploads/books are on the way cover narrow.png
 
 ### Goals for the book borrowing page redesign:
 
-- **Improve usability.**  Poor management of book editions resulted in unclear delivery dates for subscribers. It caused frustration and repeated support tickets.
-- **Important feature addition: Delivery to pick-up point**. Books could previously only be delivered to the subscriber’s workplace. With work-from-home on the rise, giving subscribers more flexibility is key. 
+- **Improve usability.** Poor management of book editions resulted in unclear delivery dates for subscribers. It caused frustration and repeated support tickets.
+- **Important feature addition: Delivery to pick-up point**.Books could previously only be delivered to the subscriber’s workplace. With work-from-home on the rise, giving subscribers more flexibility is key. 
 
 ### My role:
 
@@ -61,17 +61,19 @@ In addition to the significant improvement of the borrowing experience, edition 
 
 #### Try it! 
 
-<p>
 
-<iframe
-  src="/widgets/pickup-modal.html"
-  width="668"
-  height="490"
-  frameborder="0"
-  scrolling="no"
-  title="Bookster pick-up location selector"
-  style="border: none; display: block; border-radius: 12px;"
-></iframe>
+
+<div style="width: 100%; overflow: hidden; border-radius: 12px;">
+  <iframe
+    src="/widgets/pickup-modal.html"
+    width="668"
+    height="490"
+    frameborder="0"
+    scrolling="no"
+    title="Bookster pick-up location selector"
+    style="border: none; display: block; width: 100%; max-width: 668px;"
+  ></iframe>
+</div>
 
 ### Teams and constraints:
 
