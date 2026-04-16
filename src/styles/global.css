@@ -59,13 +59,17 @@
 		background-size: 16px 16px;
 	}
 	.prose {
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: 300;
-}
+    	font-family: "Sofia Sans", sans-serif;
+    	font-weight: 300;
+	}
+
 
 	a {
 		color: inherit;
-		text-decoration: none;
+		text-decoration: underline;
+	}
+	.prose a, p a {
+    text-decoration: underline;
 	}
 
 	time {
@@ -163,6 +167,13 @@
 			padding-left: calc(var(--grid-cell) / 1);
 			padding-right: calc(var(--grid-cell) / 1);
 		}
+		.content-shell {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    	}
+   		 .prose h2 { margin-top: 2rem; margin-bottom: 1.5rem; }
+   		 .prose h3 { margin-top: 1.5rem; margin-bottom: 1rem; }
+
 	}
 
 	.hero {
