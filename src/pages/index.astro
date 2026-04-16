@@ -2,6 +2,7 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import Hero from '../components/Hero.astro';
 import PostList from '../components/PostList.astro';
+import SectionList from '../components/SectionList.astro';
 import Social from '../components/Social.astro';
 
 import { getSite } from '../utils/consts';
@@ -31,5 +32,61 @@ const site = await getSite();
 		limit={6}
 		viewAllHref="/blog"
 	/>
+	<SectionList
+		heading="Work Experience"
+		items={[
+			{
+				title: "Product Designer — Skyland Family, Berlin",
+				description: "Invitation-only investment platform for family offices and wealthy individuals. Planned and executed MVP in under 6 months; sole designer across the full product lifecycle — research, prototyping, handoff, sprint planning, and backlog management.",
+				datetime: "2020-01",
+				dateLabel: "2020–2025",
+			},
+			{
+				title: "Designer (Graphic, UX/UI) — Bookster, Bucharest",
+				description: "Modern online library offered as an employment benefit. Managed all visual touchpoints for two years, then transitioned into a UX role focused on User Retention — building and iterating on library features in a build-measure-learn framework.",
+				datetime: "2015-01",
+				dateLabel: "2015–2018",
+			},
+			{
+				title: "Graphic Designer — AnnArt Gallery, Bucharest",
+				description: "Managed graphic content for social media, newsletters, printed invitations and posters. Created an art catalogue, accountable for layout, DTP, production, distribution, and launch.",
+				datetime: "2014-01",
+				dateLabel: "2014–2015",
+			},
+		]}
+	/>
+
+	<SectionList
+		heading="Education"
+		items={[
+			{
+				title: "Graphic Design and Visual Communication, BA",
+				description: "National University of Arts, Bucharest",
+				datetime: "2014",
+				dateLabel: "Class of 2014",
+			},
+			{
+				title: "Graphic Design — Erasmus Exchange",
+				description: "Estonian Academy of Arts, Tallinn",
+				datetime: "2013",
+				dateLabel: "2013",
+			},
+		]}
+	/>
+
+	<SectionList
+		heading="Skills & Languages"
+		items={[
+			{
+				title: "Product Design",
+				description: "Full-cycle product design, Research & Analysis, Prototyping, Backlog Management & Planning, Product Management",
+			},
+			{
+				title: "Languages",
+				description: "Romanian and Russian — native. English — fluent. German — B2.",
+			},
+		]}
+	/>
+
 
 </PageLayout>
