@@ -18,9 +18,9 @@ heroImage: /uploads/books are on the way cover narrow.png
 
 ### My role:
 
-- collect, summarise, and prioritise the needs and constraints of all the teams affected by the redesign, more specifically the development team, the logistics department, and the business developers;
-- develop and share prototypes and ideas, get feedback early and refine the direction accordingly. 
-- hand off the final design and collaborate closely with the development team to ensure smooth implementation.
+- Collect, summarise, and prioritise the requirements and constraints of all the teams affected by the redesign, more specifically the development team, the logistics department, and the business developers;
+- Design and share prototypes and ideas, get feedback early and refine the direction accordingly. 
+- Hand off the final design and collaborate closely with the development team to ensure smooth implementation.
 
 ## Exploring the good-better-best model
 
@@ -32,11 +32,11 @@ heroImage: /uploads/books are on the way cover narrow.png
 
 ![](/uploads/Borrow%20Better.png)
 
-![](/uploads/Borrow%20better%20wire.png)
+![](/uploads/Borrow%20better%20wire%202.png)
 
 ### Best, also known as future-proof:
 
-![](/uploads/Borrow%20Best%20wire.png)
+![](/uploads/Borrow%20Best%20wire%202.png)
 
 ### Advantages:
 
@@ -44,7 +44,6 @@ heroImage: /uploads/books are on the way cover narrow.png
 I often think of user experience as a funnel or a system designed to catch those who "slip through the cracks". Happy paths are great, and they will serve a significant part of the user base just fine. But for all of those "Oh, no!" moments, it is good practice to offer solutions.
 → Closest pick-up point is full? Look at the closest ones, you might not know how much our network has expanded!
 → In a hurry to borrow a chill read before you board the plane? Consider other editions or pick-up points that are part of an earlier delivery route!
-
 - **A solid set-up to collect relevant data about location assessment**. 
 Granular information about every location is not only helpful for a mindful user experience, but also for efficiency down the line. Landing a new partnership with a hip cafe or local store looks great on paper, but if it doesn't serve the library by spiking book loans or doesn't benefit the business partner by driving readers to that establishment, it is simply a waste of time and effort on both sides. 
 
