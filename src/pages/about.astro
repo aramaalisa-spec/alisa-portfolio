@@ -1,5 +1,7 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+
+// import portrait from '../assets/portrait.jpg';
 ---
 
 <PageLayout
@@ -7,11 +9,43 @@ import PageLayout from '../layouts/PageLayout.astro';
 	description="We shape product, brand, and code for mission-driven teams."
 	eyebrow="Studio"
 >
-	<section class="content-shell py-12 space-y-8"> 
-		<div class="space-y-3 max-w-3xl">
-			<p class="m-0 text-ink text-2xl font-semibold leading-tight">We are a compact, senior studio blending research, design, and engineering to ship resilient products.</p>
-			<p class="m-0 text-muted">We stay close to the people using what we build: quick interviews, async notes, and instrumented releases. Decisions stay traceable so teams know why something shipped, not just what shipped.</p>
-			<p class="m-0 text-muted">When we embed with clients, we bring our own delivery discipline—strong briefs, scoped milestones, and demos that keep stakeholders aligned. The goal: fewer surprises, faster learning.</p>
+	<section class="content-shell py-12 space-y-16">
+
+		{/* INTRO WITH PHOTO */}
+		<div class="flex gap-8 items-start">
+			<div class="shrink-0">
+				<img
+					src="/placeholder-portrait.jpg"
+					alt="Your name"
+					class="w-32 h-32 rounded-full object-cover object-top"
+				/>
+			</div>
+			<div class="space-y-3 max-w-2xl">
+				<p class="m-0 text-ink text-2xl font-semibold leading-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p class="m-0 text-muted">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
 		</div>
-	</section>
-</PageLayout>
+
+		{/* BOOKS */}
+		<div class="space-y-4">
+			<h2 class="text-sm font-bold uppercase tracking-widest text-muted">Recently read</h2>
+			<div class="grid grid-cols-1 gap-6">
+
+				<div class="flex gap-4 items-start">
+					<img src="https://placehold.co/60x90" alt="Book cover" class="shrink-0 w-12 object-cover" />
+					<div>
+						<p class="font-semibold text-ink">Book Title One</p>
+						<p class="text-sm text-muted mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+					</div>
+				</div>
+
+				<div class="flex gap-4 items-start">
+					<img src="https://placehold.co/60x90" alt="Book cover" class="shrink-0 w-12 object-cover" />
+					<div>
+						<p class="font-semibold text-ink">Book Title Two</p>
+						<p class="text-sm text-muted mt-1">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+					</div>
+				</div>
+
+				<div class="flex gap-4 items-start">
+					<img src="https://placehold.co/60x90" alt="Book cover" class

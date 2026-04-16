@@ -5,7 +5,6 @@ import { getCollection } from 'astro:content';
 import { withBase } from '../utils/slugify';
 
 interface RawPost {
-    // collection item shape:
     id?: string;
     data?: {
         title?: string;
@@ -13,14 +12,10 @@ interface RawPost {
         heroImage?: any;
         pubDate?: Date | string;
     };
-
-    // flattened shape:
     title?: string;
     description?: string;
     heroImage?: any;
     pubDate?: Date | string;
-
-    // optional link if not a collection item:
     href?: string;
 }
 
@@ -31,7 +26,6 @@ export interface Props {
     viewAllHref?: string;
     viewAllLabel?: string;
 }
-
 
 let {
     heading = "Blog",
@@ -46,65 +40,62 @@ function getPostData(item: RawPost) {
 }
 
 if (posts.length === 0) {
-    console.warn(
-        '[PostList] No posts provided; fetching from "blog" collection.'
-    );
+    console.warn('[PostList] No posts provided; fetching from "blog" collection.');
     posts = posts.concat(await getCollection("blog")).sort(
         (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
     );
 }
 
 const subpath = import.meta.env.BASE_URL;
-
 const visiblePosts = typeof limit === "number" ? posts.slice(0, limit) : posts;
 
 ---
 
 <section class="content-shell">
-    <div>
-        <div class="grid grid-cols-1 gap-y-4 md:grid-cols-4 border-b py-12 border-base-200">
-    <div class="lg:sticky lg:top-2 lg:z-12 self-start">
-        <h2 class="text-sm 2xl:text-xl text-base-900 font-bold uppercase">
-            {heading}
+    <div class="border-b py-12 border-base-200">
+        <h2 class="text-sm 2xl:text-xl text-base-900 font-bold uppercase mb-4">
+            My work
         </h2>
-    </div>
 
-            <div class="lg:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-y-2 gap-x-2 items-start">
-                {
-                    visiblePosts.map((post) => {
-                        const p = getPostData(post) || {};
-                        const id = (post as any).id;
-                        const href = id
-                            ? withBase(`/blog/${id}/`)
-                            : p.href
-                                ? withBase(p.href)
-                                : undefined;
-                        const rawDate = p.pubDate ?? null;
-                        const pubDate = rawDate
-                            ? rawDate instanceof Date
-                                ? rawDate
-                                : new Date(rawDate)
-                            : null;
+        <div class="grid grid-cols-3 gap-1">
+            {
+                visiblePosts.map((post) => {
+                    const p = getPostData(post) || {};
+                    const id = (post as any).id;
+                    const href = id
+                        ? withBase(`/blog/${id}/`)
+                        : p.href
+                            ? withBase(p.href)
+                            : undefined;
+                    const rawDate = p.pubDate ?? null;
+                    const pubDate = rawDate
+                        ? rawDate instanceof Date
+                            ? rawDate
+                            : new Date(rawDate)
+                        : null;
 
-                        return (
-                            <Card
-                                title={p.title}
-                                href={href}
-                                image={p.heroImage}
-                                imageAlt={p.title}
-                                description={p.description}
-                                date={pubDate}
-                                variant="post"
-                            />
-                        );
-                    })
-                }
-                <Card
-                    title={viewAllLabel}
-                    href={withBase(viewAllHref ?? '/blog/')}
-                    variant="post"
-                />
-            </div>
+                    return (
+                        <Card
+                            title={p.title}
+                            href={href}
+                            image={p.heroImage}
+                            imageAlt={p.title}
+                            description={p.description}
+                            date={pubDate}
+                            variant="post"
+                        />
+                    );
+                })
+            }
+            {visiblePosts.length >= 5 && (       // ← replace the old <Card> with this
+                <div class="mt-8">
+                    <Card
+                        title={`→ ${viewAllLabel}`}
+                        href={withBase(viewAllHref ?? '/blog/')}
+                        variant="post"
+                    />
+                </div>
+            )}
         </div>
     </div>
 </section>

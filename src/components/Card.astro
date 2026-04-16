@@ -14,7 +14,7 @@ interface Props {
 
 const { title, href, description, image, imageAlt = '', eyebrow } = Astro.props as Props;
 
-const articleClass = 'cursor-pointer self-start group relative grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-start p-2 transition duration-300 ease-in-out hover:-translate-y-1 focus-within:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-border';
+const articleClass = 'cursor-pointer self-start group relative grid grid-cols-1 gap-1 p-2 transition duration-300 ease-in-out hover:-translate-y-1 focus-within:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-border';
 const isExternal = /^https?:\/\//.test(href) || href.startsWith('//');
 const aProps = { href, 'aria-label': `Ver ${title}`, ...(isExternal ? { rel: 'noopener noreferrer' } : {}) };
 ---
@@ -24,34 +24,34 @@ const aProps = { href, 'aria-label': `Ver ${title}`, ...(isExternal ? { rel: 'no
 	<a class="sr-only" {...aProps}>Ver {title}</a>
 
 	{image && (
-		<figure class="lg:col-span-full relative overflow-hidden">
+		<figure class="relative overflow-hidden">
 			{typeof image === 'string' ? (
 				<img
 					src={image}
 					alt={imageAlt}
 					loading="lazy"
-					class="lg:col-span-full aspect-12/7 object-cover object-top w-full transition duration-400 group-hover:scale-[1.02]"
+					class="aspect-12/7 object-cover object-top w-full transition duration-400 group-hover:scale-[1.02]"
 				/>
 			) : (
 				<Image
 					src={image}
 					alt={imageAlt}
 					loading="lazy"
-					class="lg:col-span-full aspect-12/7 object-cover object-top w-full transition duration-400 group-hover:scale-[1.02]"
+					class="aspect-12/7 object-cover object-top w-full transition duration-400 group-hover:scale-[1.02]"
 				/>
 			)}
 		</figure>
 	)}
 
-	<div class="lg:col-span-2">
-		{eyebrow && <p class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-[color:var(--color-accent)]">{eyebrow}</p>}
-		<h3 class="text-sm 2xl:text-xl text-[color:var(--color-primary)] font-bold uppercase">
-			<span class="relative z-10">{title}</span>
-		</h3>
-		{description && <p class="text-xs 2xl:text-lg mt-1 text-[color-mix(in_srgb,var(--color-primary)_70%,var(--color-text-light)_30%)]">{description}</p>}
-	</div>
+	<div>
+    {eyebrow && <p class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-[color:var(--color-accent)]">{eyebrow}</p>}
+    <h2 class="text-sm 2xl:text-xl text-[color:var(--color-primary)] font-bold uppercase">
+        <span class="relative z-10">{title}</span>
+    </h2>
+    {description && <h4 class="text-xs 2xl:text-lg mt-1 text-[color-mix(in_srgb,var(--color-primary)_70%,var(--color-text-light)_30%)]">{description}</h4>}
+</div>
 
-	<div class="relative z-10 mt-2 lg:col-span-full mt-auto pt-2 text-[0.95rem] text-[color-mix(in_srgb,var(--color-primary)_70%,var(--color-text-light)_30%)]">
+	<div class="relative z-10">
 		<slot />
 	</div>
 </article>
