@@ -22,11 +22,15 @@ heroImage: /uploads/books are on the way cover narrow.png
 - develop and share prototypes and ideas, get feedback early and refine the direction accordingly. 
 - hand off the final design and collaborate closely with the development team to ensure smooth implementation.
 
-### Exploring the good-better-best model:
+## Exploring the good-better-best model
 
-![](/uploads/Borrow%20Good.png)
+### Good:
+
+![](/uploads/Borrow%20Good2.png)
 
 ### Better:
+
+![](/uploads/Borrow%20Better.png)
 
 ![](/uploads/Book%20Pagewhole%20tiny.png)
 
