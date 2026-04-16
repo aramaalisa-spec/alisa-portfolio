@@ -2,7 +2,7 @@
 title: Not just Email & Password
 description: The inherent complexity of an application-based onboarding
 pubDate: 2026-04-12T10:59:00
-heroImage: /uploads/not just email.png
+heroImage: /uploads/email and password.png
 ---
 
 # Not Just  _Email & Password:_
