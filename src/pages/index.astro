@@ -75,18 +75,35 @@ const site = await getSite();
 	/>
 
 	<SectionList
-		heading="Skills & Languages"
-		items={[
-			{
-				title: "Product Design",
-				description: "Full-cycle product design, Research & Analysis, Prototyping, Backlog Management & Planning, Product Management",
-			},
-			{
-				title: "Languages",
-				description: "Romanian and Russian — native. English — fluent. German — B2.",
-			},
-		]}
-	/>
-
+    heading="Skills & Languages"
+    items={[
+        {
+            title: "Product Design",
+            description: "Full-cycle product design, Research & Analysis, Prototyping, Backlog Management & Planning, Product Management",
+        },
+        {
+            title: "Languages",
+            description: "Romanian and Russian — native. English — fluent. German — B2.",
+        },
+    ]}
+>
+    <div class="flex gap-4 items-center">
+        
+            <a href="/Alisa_Arama_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm 2xl:text-xl text-base-600 uppercase"
+        >
+            Open CV ↑
+        </a>
+        
+            <a href="/Alisa_Arama_Resume.pdf"
+            download
+            class="text-sm 2xl:text-xl text-base-600 uppercase"
+        >
+            Download PDF ↓
+        </a>
+    </div>
+</SectionList>
 
 </PageLayout>
