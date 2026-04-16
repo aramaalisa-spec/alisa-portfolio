@@ -9,14 +9,24 @@ heroImage: /uploads/books are on the way cover narrow.png
 
 ## How a more transparent borrowing experience made reading easier
 
-#### Bookster is a modern online/offline  library working in a B2B2C model.
-
-#### Memberships are offered as employment benefits by the best Romanian companies.
+#### Bookster is a modern online/offline library following a B2B2C model. Memberships are offered as employment benefits by the best Romanian companies.
 
 ### Goals for the book borrowing page redesign:
 
 - **Improve usability.**  Poor management of book editions resulted in unclear delivery dates for subscribers. It caused frustration and repeated support tickets.
 - **Feature addition: Delivery to pick-up point**. Books could previously only be delivered to the subscriber’s workplace. With work-from-home on the rise, giving subscribers more flexibility is key. 
+
+### My role:
+
+- collect, summarise, and prioritize the needs and constraints of all the teams affected by the redisign, more specifically the development team, the logistics department, and the business developers;
+- develop and share prototypes and ideas, get feedback early and refine the direction accordingly. 
+- hand off the final design and collaborate closely with the development team to ensure smooth implementation.
+
+### Exploring the good-better-best model:
+
+![](/uploads/Borrow%20Good.png)
+
+### Better:
 
 ![](/uploads/Book%20Pagewhole%20tiny.png)
 
