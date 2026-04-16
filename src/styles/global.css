@@ -299,7 +299,7 @@
 	.prose :where(h1):not(:where([class~="not-prose"] *)) {
 		font-family: "Sofia Sans Semi Condensed", sans-serif;
 		font-weight: 900;
-		font-size: 46px;
+		font-size: clamp(1.8rem, 7vw, 46px);
 		line-height: 1;
 		letter-spacing: -1px;
 	}
@@ -307,7 +307,7 @@
 	.prose :where(h2):not(:where([class~="not-prose"] *)) {
 		font-family: "Sofia Sans Semi Condensed", sans-serif;
 		font-weight: 400;
-		font-size: 36px;
+		font-size: clamp(1.5rem, 5vw, 36px);
 		line-height: 1;
 		letter-spacing: -1px;
 	}
@@ -344,9 +344,9 @@
 	}
 }
 @layer utilities {
-    .prose h1 { font-family: "Sofia Sans Semi Condensed", sans-serif; font-weight: 900; font-size: 46px; line-height: 1; letter-spacing: -1px; }
-    .prose h2 { font-family: "Sofia Sans Semi Condensed", sans-serif; font-weight: 400 !important; font-size: 36px; line-height: 1; letter-spacing: -1px; }
-    .prose h3 { font-family: "Sofia Sans", sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: underline; text-underline-offset: 3px; }
+    .prose h1 { font-family: "Sofia Sans Semi Condensed", sans-serif; font-weight: 900; font-size: clamp(1.8rem, 7vw, 46px); line-height: 1; letter-spacing: -1px; }
+	.prose h2 { font-family: "Sofia Sans Semi Condensed", sans-serif; font-weight: 400 !important; font-size: clamp(1.5rem, 5vw, 36px); line-height: 1; letter-spacing: -1px; }
+ 	.prose h3 { font-family: "Sofia Sans", sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: underline; text-underline-offset: 3px; }
     .prose h4 { font-family: "Sofia Sans", sans-serif; font-weight: 600; font-size: 20px; line-height: 1.2; }
     .prose p, .prose li { font-family: "Sofia Sans", sans-serif; font-weight: 300; font-size: 16px; line-height: 1.6; }
     .prose strong { font-weight: 700; }
