@@ -24,7 +24,7 @@ There are similar tools online (think HypoFriend, BAUFI 24) that are either unsu
 
 I mapped existing tools on a Miro board, identifying gaps relevant to UHNWIs, and presented it to the entire team for review and feedback. We aligned early on and could go “back to the drawing board” at any time. 
 
-#### ![](/uploads/Financing%20Calculator%20hero3.png)
+#### ![](/uploads/Screenshot%202026-04-17%20at%2020.16.36.png)
 
 ## 
 
