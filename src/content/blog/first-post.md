@@ -16,8 +16,6 @@ tags:
 
 #### The Financing Calculator (FC) is a tool we built for the main membership-based investment platform for ultra-high-net-worth individuals (UHNWIs). It is geared towards wealthy members looking for financing for large-scale projects. 
 
-#### ![](/uploads/Screenshot%202026-04-17%20at%2020.16.36.png)
-
 ## Discovery
 
 ### **Competitor analysis and market gap**
@@ -25,6 +23,10 @@ tags:
 There are similar tools online (think HypoFriend, BAUFI 24) that are either unsuitable for large sums (€5M and up) or tied to a specific bank and do not offer an overview of multiple possible financing partners. This is the market gap we aimed for. 
 
 I mapped existing tools on a Miro board, identifying gaps relevant to UHNWIs, and presented it to the entire team for review and feedback. We aligned early on and could go “back to the drawing board” at any time. 
+
+#### ![](/uploads/Screenshot%202026-04-17%20at%2020.16.36.png)
+
+## 
 
 ### **Stakeholder interviews**
 
