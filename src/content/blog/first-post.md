@@ -10,7 +10,7 @@ tags:
   - intro
 ---
 
-# **Financing Calculator**: Matching borrowers with banks on a granular level
+# **Financing Calculator: Matching borrowers with banks on a granular level**
 
 ## Context
 
