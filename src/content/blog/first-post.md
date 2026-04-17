@@ -2,7 +2,7 @@
 title: Financing Calculator (FC)
 description: Find the right banking partner
 pubDate: 2026-04-11T15:24:00.000+02:00
-heroImage: /uploads/Financing Calculator hero4.png
+heroImage: /uploads/Financing Calculator hero5.png
 author: rodrigo
 updatedDate: 2026-01-15
 tags:
