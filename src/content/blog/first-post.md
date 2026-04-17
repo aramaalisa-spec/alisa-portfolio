@@ -2,7 +2,7 @@
 title: Financing Calculator (FC)
 description: Find the right banking partner
 pubDate: 2026-04-11T15:24:00.000+02:00
-heroImage: /uploads/blue post-it S wide-1.png
+heroImage: /uploads/Financing Calculator hero.png
 author: rodrigo
 updatedDate: 2026-01-15
 tags:
@@ -36,7 +36,7 @@ The project had 3 internal stakeholders:
 * **The business developers**, who built and maintained relationships with banks. They know how the banks view lending, how they evaluate prospective investments, and what they require to say _yes_.
 * **The transaction managers,** who are the primary point of contact with members.
 
-A successful product should reconcile three perspectives — have a working UI that serves the needs of members looking for a financing partner, generate useful leads that are attractive to banks and bring revenue, and provide learning for further improvement and development.
+#### A successful product should reconcile three perspectives — have a working UI that serves the needs of members looking for a financing partner, generate useful leads that are attractive to banks and bring revenue, and provide learning for further improvement and development.
 
 ## **System Design**
 
@@ -53,10 +53,10 @@ Because the calculator is only available for members already registered on the p
 
 Once the entire system was clear, we assessed the difficulty of every step, I wrote the user stories, and planned the sprints so that the work on the internal architecture could begin while I was designing and iterating on the UI. 
 
+## **UI design**
+
 <iframe src="/widgets/property-calculator.html" width="750" height="460" frameborder="0" scrolling="no" style="max-width:100%"></iframe>
 <PropertyCalculator />
-
-## **UI design**
 
 [screenshots, maybe animations, etc.]
 
