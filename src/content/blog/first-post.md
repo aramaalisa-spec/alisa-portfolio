@@ -10,13 +10,13 @@ tags:
   - intro
 ---
 
-# **Financing Calculator (FC)**
+# **Financing Calculator**: Matching borrowers with banks on a granular level
 
 ## Context
 
-#### The Financing Calculator is a tool we built within the main membership-based investment platform for ultra-high-net-worth individuals (UHNWIs). It is geared towards wealthy members looking for financing for large-scale projects. 
+#### The Financing Calculator (FC) is a tool we built for the main membership-based investment platform for ultra-high-net-worth individuals (UHNWIs). It is geared towards wealthy members looking for financing for large-scale projects. 
 
-#### ![](/uploads/blue%20post-it%20S%20wide-1.png)
+#### ![](/uploads/Screenshot%202026-04-17%20at%2020.16.36.png)
 
 ## Discovery
 
