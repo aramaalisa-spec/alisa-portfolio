@@ -2,7 +2,7 @@
 title: The Bean Bag Theory
 description: Coffee tracking taken seriously
 pubDate: 2026-04-13T23:36:00
-heroImage: /uploads/coffee photo left aligned (1).png
+heroImage: /uploads/coffee photo left aligned (1).webp
 ---
 
 # The Bean Bag Theory: coffee tracking taken seriously
@@ -15,7 +15,7 @@ heroImage: /uploads/coffee photo left aligned (1).png
 
 #### I decided that this is a perfect use-case for vibe-coding.
 
-![](/uploads/coffee%20photo2.png)
+![](/uploads/coffee%20photo2.webp)
 
 ### **Goals:**
 
@@ -38,11 +38,11 @@ Besides, proper components, colours, tokens, and naming had to be set up.
 
 **Step 4: Import back into Claude, connect the necessary APIs and get going!**
 
-![](/uploads/bean%20bag.png)
+![](/uploads/bean%20bag.webp)
 
 <iframe src="/slurp.html" width="100%" height="160" frameborder="0" style="background: transparent;"></iframe>
 
-![](/uploads/bean%20bag2.png)
+![](/uploads/bean%20bag2.webp)
 
 ## Results and thoughts
 
@@ -63,4 +63,4 @@ __________________________________________
 
 Thanks Claude, Figma, and Notion for working so well together.
 
-![](/uploads/logos.png)
+![](/uploads/logos.webp)

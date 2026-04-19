@@ -2,7 +2,7 @@
 title: Not just Email & Password
 description: The inherent complexity of an application-based onboarding
 pubDate: 2026-04-12T10:59:00
-heroImage: /uploads/email and password.png
+heroImage: /uploads/email and password.webp
 ---
 
 # Not Just  _Email & Password:_
@@ -23,7 +23,7 @@ heroImage: /uploads/email and password.png
 
 #### It looked simple enough at first:
 
-![](/uploads/classic%20signup%20flow%202.png)
+![](/uploads/classic%20signup%20flow%202.webp)
 
 ### Why this approach failed:
 
@@ -35,7 +35,7 @@ It was, of course, not a bug but the core dysfunction of the overall signup flow
 
 ### Key distinction:
 
-![](/uploads/Password%20last%202.png)
+![](/uploads/Password%20last%202.webp)
 
 #### The password creation step carries a strong signal: _I have an account, I am in._ Placing it after approval meant that the signal fired at exactly the right moment, precisely when a person could close the signup loop and finally access the platform.
 
@@ -45,7 +45,7 @@ It was, of course, not a bug but the core dysfunction of the overall signup flow
 
 Signup flowchart for a Wealth Owner / Family Officer:
 
-![](/uploads/Signup%20Flowchart%20narrow3.png)
+![](/uploads/Signup%20Flowchart%20narrow3.webp)
 
 ### Internal stakeholders and their needs:
 
@@ -60,7 +60,7 @@ Signup flowchart for a Wealth Owner / Family Officer:
 - Different stakeholders have different needs;
 - Backend complexity.
 
-![](/uploads/Application%20screens.png)
+![](/uploads/Application%20screens.webp)
 
 ### 
 
@@ -68,7 +68,7 @@ Signup flowchart for a Wealth Owner / Family Officer:
 
 #### Many legal terms in Germany and across the DACH region lack accurate English equivalents. A linguistic patchwork within a single form seemed to be terrible UX. 
 
-![](/uploads/Apply%20as%20foundation%20language%20warning.png)
+![](/uploads/Apply%20as%20foundation%20language%20warning.webp)
 
 #### Research, however, proved my intuition wrong: even English-speaking members were familiar with and even preferred precise German legal terms over ambiguous approximations.
 
@@ -80,7 +80,7 @@ Registering as a philanthropic organisation had by far the most complex flow, be
 
 ###  Here is how I reduced friction:
 
-### ![](/uploads/Mitigate%20hurdles%20foundations.png)
+### ![](/uploads/Mitigate%20hurdles%20foundations.webp)
 
 ## Surprises and learnings:
 

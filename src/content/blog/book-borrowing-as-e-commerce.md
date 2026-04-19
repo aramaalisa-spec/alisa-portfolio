@@ -2,7 +2,7 @@
 title: 'Book borrowing as e-commerce:'
 description: How a more transparent borrowing experience made reading easier
 pubDate: 2026-04-11T19:58:00
-heroImage: /uploads/books are on the way cover narrow.png
+heroImage: /uploads/books are on the way cover narrow.webp
 ---
 
 # Library as e-commerce
@@ -26,17 +26,17 @@ heroImage: /uploads/books are on the way cover narrow.png
 
 ### Good:
 
-![](/uploads/Borrow%20Good2.png)
+![](/uploads/Borrow%20Good2.webp)
 
 ### Better:
 
-![](/uploads/Borrow%20Better.png)
+![](/uploads/Borrow%20Better.webp)
 
-![](/uploads/Borrow%20better%20wire%202.png)
+![](/uploads/Borrow%20better%20wire%202.webp)
 
 ### Best, also known as future-proof:
 
-![](/uploads/Borrow%20Best%20wire%202.png)
+![](/uploads/Borrow%20Best%20wire%202.webp)
 
 ### Advantages:
 
@@ -49,7 +49,7 @@ Granular information about every location is not only helpful for a mindful user
 
 ### Pushback:
 
-![](/uploads/Pushback%20narrow.png)
+![](/uploads/Pushback%20narrow.webp)
 
 ### 
 
@@ -57,7 +57,7 @@ Granular information about every location is not only helpful for a mindful user
 
 In addition to the significant improvement of the borrowing experience, edition management was another important goal for this project. Instead of refreshing the entire page when a reader switches the language, the delivery date is recalibrated and shown in real-time. 
 
-![](/uploads/Book%20Pagewhole%20tiny.png)
+![](/uploads/Book%20Pagewhole%20tiny.webp)
 
 #### Try it! 
 

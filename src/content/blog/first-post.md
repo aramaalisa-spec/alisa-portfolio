@@ -2,7 +2,7 @@
 title: Financing Calculator (FC)
 description: Find the right banking partner
 pubDate: 2026-04-11T15:24:00.000+02:00
-heroImage: /uploads/Financing Calculator hero5.png
+heroImage: /uploads/Financing Calculator hero5.webp
 author: rodrigo
 updatedDate: 2026-01-15
 tags:
@@ -24,7 +24,7 @@ There are similar tools online (think HypoFriend, BAUFI 24) that are either unsu
 
 I mapped existing tools on a Miro board, identifying gaps relevant to UHNWIs, and presented it to the entire team for review and feedback. We aligned early on and could go “back to the drawing board” at any time. 
 
-#### ![](/uploads/Screenshot%202026-04-17%20at%2020.16.36.png)
+#### ![](/uploads/Screenshot%202026-04-17%20at%2020.16.36.webp)
 
 ## 
 
