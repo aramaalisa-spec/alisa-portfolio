@@ -43,4 +43,9 @@ const { title, description, pubDate, updatedDate, heroImage, tags = [], Content 
         </section>
     </article>
     </div>
+    <script>
+  document.querySelectorAll('.post-article img').forEach(img => {
+    img.setAttribute('loading', 'lazy');
+  });
+</script>
 </BaseLayout>
