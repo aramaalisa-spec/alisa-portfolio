@@ -55,8 +55,6 @@ Once the entire system was clear, we assessed the difficulty of every step, I wr
 <iframe src="/widgets/property-calculator.html" width="750" height="460" frameborder="0" scrolling="no" style="max-width:100%"></iframe>
 <PropertyCalculator />
 
-[screenshots, maybe animations, etc.]
-
 We shared an early prototype with our contacts at the banks. The calculator only works if banks are engaged and matches lead to introductions that lead to commissions. Some of the feedback was anticipated and had to be gently pushed back on. Predictably, every bank wanted to be featured prominently with better positioning and more acclaim. However, the calculator's value to users depended entirely on it being neutral. 
 
 How to make our partners feel special and appreciated without playing favourites? My coworkers’ efforts should not be taken for granted.
