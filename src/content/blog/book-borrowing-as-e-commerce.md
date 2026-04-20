@@ -5,7 +5,7 @@ pubDate: 2026-04-11T19:58:00
 heroImage: /uploads/books are on the way cover narrow.png
 ---
 
-![](/uploads/design%20of%20everyday%20things%203000.png)
+![](/uploads/book%20with%20bezel.png)
 
 # Library as e-commerce
 
