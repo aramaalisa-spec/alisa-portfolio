@@ -5,9 +5,7 @@ pubDate: 2026-04-11T15:24:00.000+02:00
 heroImage: /uploads/Financing Calculator hero5.webp
 author: rodrigo
 updatedDate: 2026-01-15
-tags:
-  - astro
-  - intro
+
 ---
 
 # **Financing Calculator: Matching borrowers with banks on a granular level**
