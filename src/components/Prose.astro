@@ -4,8 +4,8 @@ const { class: className = '' } = Astro.props;
 
 <article
 	class={
-		`prose prose-neutral dark:prose-invert prose-headings:[color:var(--color-ink)] ${className}`.trim()
-	}
+		`prose prose-neutral dark:prose-invert prose-headings:[color:var(--color-ink)] prose-strong:[color:var(--color-ink)] ${className}`.trim()
+  }
 >
 	<slot />
 </article>
