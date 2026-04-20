@@ -5,7 +5,6 @@ pubDate: 2026-04-11T15:24:00.000+02:00
 heroImage: /uploads/Financing Calculator hero5.webp
 author: rodrigo
 updatedDate: 2026-01-15
-
 ---
 
 # **Financing Calculator: Matching borrowers with banks on a granular level**
@@ -64,13 +63,15 @@ How to make our partners feel special and appreciated without playing favourites
 
 Other feedback was useful and frankly surprising. For example, when capturing the address of the eventual investment, we assumed that asking for the city and federal state would be enough to assess the compatibility. In reality, coverage can differ, without exaggeration, for two buildings standing across the street from each other. We had to ask for the entire address (or addresses) down to the postal code. It was a small field, easy to miss, and it could have silently broken the matching for a subset of users without anyone immediately knowing why.
 
-[Final UI with minimal comments. Eg.:]
+![](/uploads/FFC%20UI.png)
 
 On the third step, users set their down payment amount. A down payment below 20% would result in unfavourable rates, so rather than processing the input and coming up with poor matches, we warned the prospective borrowers and offered to advise them personally on a more advantageous solution. 
 
 The results page showed at most 4 banks, ordered by match percentage. Any match below 75% was considered a no-go — either the request was too generic, or something made it unattractive to banks. In both cases, the user saw a custom page inviting them to reach out directly. 
 
-\*One must acknowledge the limitations of an automated tool.\* 
+#### _One must acknowledge the limitations of an automated tool._
+
+####  
 
 ## **The how-tos, the what ifs, and the what nows**
 
