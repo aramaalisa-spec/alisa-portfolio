@@ -50,7 +50,7 @@ const visiblePosts = typeof limit === "number" ? posts.slice(0, limit) : posts;
 
 <section>
     <div class="max-w-[90rem] mx-auto px-8">
-        <div class="grid grid-cols-1 gap-y-24 md:grid-cols-3 border-b py-24 border-base-200">
+        <div class="grid grid-cols-1 gap-y-8 md:gap-y-24 md:grid-cols-3 border-b py-12 md:py-24 border-base-200">
 
             <div class="lg:sticky lg:top-24 lg:z-40 self-start">
                 <h2 class="text-sm 2xl:text-xl text-base-900 font-bold uppercase">
@@ -58,7 +58,7 @@ const visiblePosts = typeof limit === "number" ? posts.slice(0, limit) : posts;
                 </h2>
             </div>
 
-            <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-y-20 gap-x-8">
+            <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-20 gap-x-8">
                 {
                     visiblePosts.map((post) => {
                         const p = getPostData(post) || {};
