@@ -8,7 +8,15 @@ interface Props {
 const { title, description, role } = Astro.props as Props; 
 ---
 
-<section class="flex flex-col justify-between" style="min-height: calc(100vh - (var(--grid-cell) / 2));">
+<section class="relative flex flex-col justify-between" style="min-height: calc(100vh - (var(--grid-cell) / 2));">
+
+  <img
+    src="/hero-sketch.png"
+    alt=""
+    aria-hidden="true"
+    class="hidden lg:block absolute right-0 top-0 h-[75%] w-auto max-w-[26%] object-contain object-right-bottom pointer-events-none select-none"
+  />
+
   <div class="grid gap-3 md:gap-4 max-w-3xl pb-6 md:pb-10">
     <div class="flex flex-col lg:flex-row lg:justify-between items-start gap-8">
       <div
@@ -28,9 +36,10 @@ const { title, description, role } = Astro.props as Props;
 
       <div class="md:col-span-2">
         {description && description.split('\n\n').map((para) => (
-  <p class="text-sm 2xl:text-xl text-base-600">{para}</p>
-))}
+          <p class="text-sm 2xl:text-xl text-base-600">{para}</p>
+        ))}
       </div>
     </div>
   </div>
+
 </section>
