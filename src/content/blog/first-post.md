@@ -61,7 +61,7 @@ How to make our partners feel special and appreciated without playing favourites
 
 Other feedback was useful and frankly surprising. For example, when capturing the address of the eventual investment, we assumed that asking for the city and federal state would be enough to assess the compatibility. In reality, coverage can differ, without exaggeration, for two buildings standing across the street from each other. We had to ask for the entire address (or addresses) down to the postal code. It was a small field, easy to miss, and it could have silently broken the matching for a subset of users without anyone immediately knowing why.
 
-![](/uploads/FFC%20UI.png)
+![](/uploads/FFC%20Green.png)
 
 On the third step, users set their down payment amount. A down payment below 20% would result in unfavourable rates, so rather than processing the input and coming up with poor matches, we warned the prospective borrowers and offered to advise them personally on a more advantageous solution. 
 
