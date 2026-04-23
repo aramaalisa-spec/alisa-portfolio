@@ -25,7 +25,9 @@ I mapped existing tools on a Miro board, identifying gaps relevant to UHNWIs, an
 
 ## 
 
-### **Stakeholder interviews**
+## Requirements Gathering
+
+### Stakeholder interviews
 
 The project had 3 internal stakeholders:
 
@@ -37,14 +39,17 @@ The project had 3 internal stakeholders:
 
 ## **System Design**
 
-The calculator is divided into four chapters: 
+### The calculator is divided into four chapters: 
 
-1. Debtor’s information mainly regarding the legal entity (for example, foundation, trust, coop, LLC, and other acronyms) and where it is registered;
-2. Information about the object or the project development for which the money is borrowed;
-3. Loan amount and conditions such as down payment, collateral, repayment, and so on.
-4. The results displayed once the risk is assessed and the matching is run.
+#### 1. **Debtor’s information** mainly regarding the legal entity (for example, foundation, trust, coop, LLC, and other acronyms) and where it is registered;
 
-Once I had an overall idea, I approached our development team to discuss the internal architecture and how the new feature would be integrated into the existing CRM setup. 
+#### 2. Information about the object or the project development for which the money is borrowed;
+
+#### 3. **Loan amount and conditions** such as down payment, collateral, repayment, and so on.
+
+#### 4. The matches displayed once the risk is assessed and the matching is run.
+
+#### Once I had an overall idea, I approached our development team to discuss the internal architecture and how the new feature would be integrated into the existing CRM setup. 
 
 Because the calculator is only available for members already registered on the platform, we had a head start. But we couldn’t simply add the debtor details to their existing CRM records, as it would bloat them significantly. Moreover, one person could borrow money using a variety of legal entities, so the new data had to be stored separately and linked to the original profiles. To capture everything the matching logic would eventually rely on, the banks required an entire new CRM module. It should be easy for business developers and transaction managers to add, delete and maintain these records.
 
