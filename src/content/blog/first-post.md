@@ -55,7 +55,11 @@ Because the calculator is only available for members already registered on the p
 
 Once the entire system was clear, we assessed the difficulty of every step, I wrote the user stories, and planned the sprints so that the work on the internal architecture could begin while I was designing and iterating on the UI. 
 
+![](/uploads/ffc%20ui%20corrected%20green.png)
+
 ## **UI design**
+
+On the third step, users set their down payment amount. A down payment below 20% would result in unfavourable rates, so rather than processing the input and coming up with poor matches, we warned the prospective borrowers and offered to advise them personally on a more advantageous solution. 
 
 <iframe src="/widgets/property-calculator.html" width="750" height="460" frameborder="0" scrolling="no" style="max-width:100%"></iframe>
 <PropertyCalculator />
@@ -65,10 +69,6 @@ We shared an early prototype with our contacts at the banks. The calculator only
 How to make our partners feel special and appreciated without playing favourites? My coworkers’ efforts should not be taken for granted.
 
 Other feedback was useful and frankly surprising. For example, when capturing the address of the eventual investment, we assumed that asking for the city and federal state would be enough to assess the compatibility. In reality, coverage can differ, without exaggeration, for two buildings standing across the street from each other. We had to ask for the entire address (or addresses) down to the postal code. It was a small field, easy to miss, and it could have silently broken the matching for a subset of users without anyone immediately knowing why.
-
-![](/uploads/FFC%20Green.png)
-
-On the third step, users set their down payment amount. A down payment below 20% would result in unfavourable rates, so rather than processing the input and coming up with poor matches, we warned the prospective borrowers and offered to advise them personally on a more advantageous solution. 
 
 The results page showed at most 4 banks, ordered by match percentage. Any match below 75% was considered a no-go — either the request was too generic, or something made it unattractive to banks. In both cases, the user saw a custom page inviting them to reach out directly. 
 
