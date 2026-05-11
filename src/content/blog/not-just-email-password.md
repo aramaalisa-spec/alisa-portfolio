@@ -60,7 +60,7 @@ Signup flowchart for a Wealth Owner / Family Officer:
 - Different stakeholders have different needs;
 - Backend complexity.
 
-![](/uploads/Application%20screens.webp)
+![](/uploads/SIGNUP%20UI%20with%20background.png)
 
 ### 
 
@@ -80,7 +80,7 @@ Registering as a philanthropic organisation had by far the most complex flow, be
 
 ###  Here is how I reduced friction:
 
-### ![](/uploads/Mitigate%20hurdles%20foundations.webp)
+### ![](/uploads/Mitigate%20hurdles%20signup.png)
 
 ## Surprises and learnings:
 
