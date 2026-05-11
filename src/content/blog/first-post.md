@@ -7,6 +7,8 @@ author: rodrigo
 updatedDate: 2026-01-15
 ---
 
+![](/uploads/Financing%20Calculator%20hero5.webp)
+
 # **Financing Calculator: Matching borrowers with banks on a granular level**
 
 ## Context
