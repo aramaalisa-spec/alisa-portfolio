@@ -1,7 +1,7 @@
 ---
 title: The Bean Bag Theory
 description: Coffee tracking taken seriously
-pubDate: 2026-04-13T23:36:00
+pubDate: 2026-05-11T20:56:00
 heroImage: /uploads/coffee photo left aligned (1).png
 ---
 
