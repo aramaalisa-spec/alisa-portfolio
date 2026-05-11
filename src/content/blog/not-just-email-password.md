@@ -45,7 +45,7 @@ It was, of course, not a bug but the core dysfunction of the overall signup flow
 
 Signup flowchart for a Wealth Owner / Family Officer:
 
-![](/uploads/Signup%20Flowchart%20narrow3.webp)
+![](/uploads/Signup%20Flowchart_s.png)
 
 ### Internal stakeholders and their needs:
 
