@@ -5,6 +5,8 @@ pubDate: 2026-05-12T13:41:00
 heroImage: /uploads/Dashboard cover tiny.png
 ---
 
+![](/uploads/top%20section%20%281%29.png)
+
 # Real Estate Transactions Dashboard 2.0
 
 ## Real-life feedback leads to real estate sales
