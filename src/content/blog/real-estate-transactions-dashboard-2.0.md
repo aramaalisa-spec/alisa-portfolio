@@ -11,12 +11,16 @@ heroImage: /uploads/Dashboard cover tiny.png
 
 #### My role:
 
-- - Gather feedback from agents who have been using the old version for over a year;
-- - Look for possible solutions for common issues;
-- - Test possible solutions with agents;
-- - Create the final UI;
-- - Hand off the final design;
-- - Write the user stories, plan the sprints, prioritize and maintain the backlog.
+#### - Gather feedback from agents who have been using the old version for over a year;
+- Look for possible solutions for common issues;
+
+#### - Test possible solutions with agents;
+
+#### - Create the final UI;
+
+#### - Hand off the final design;
+
+#### - Write the user stories, plan the sprints, prioritize and maintain the backlog.
 
 **Goals and KPIs:**
 
