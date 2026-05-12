@@ -49,7 +49,7 @@ To accomplish this goal, a transaction manager should be able to:
 - Publish new deals as soon as the checklist has been crossed out;
 - Take action on expiring contracts, either extend or let lapse.
 
-![](/uploads/Dashboards%20layouts.png)
+![](/uploads/Dashboards%20layouts%202.png)
 
 ## Individual transaction review
 
