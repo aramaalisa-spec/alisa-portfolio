@@ -49,6 +49,8 @@ To accomplish this goal, a transaction manager should be able to:
 - Publish new deals as soon as the checklist has been crossed out;
 - Take action on expiring contracts, either extend or let lapse.
 
+![](/uploads/Dashboards%20layouts.png)
+
 ## Individual transaction review
 
 ### Goal statement:
@@ -61,3 +63,5 @@ To gain useful insights from the individual transaction view, a transa ction man
 - assess individual transactions based on the conversion funnel;
 - identify where interest drops off;
 - control the pipeline and maintain contact with interested parties.
+
+![](/uploads/Individual%20transaction%20health.png)
