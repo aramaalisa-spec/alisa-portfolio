@@ -86,12 +86,12 @@ To gain useful insights from the individual transaction view, a transa ction man
 
   **Every sale goes through these stages:**
 
-    1. **Preview** – someone accessed the high-level details about a deal;
-1. An **NDA** was signed in order to get the detailed real estate exposé;
-2. Express **interest** in buying (request a viewing, negotiation, etc.);
-3. **Letter of intent**;
-4. **Due diligence** and notary appointment;
-5. **Sold**.
+1. **Preview** – someone accessed the high-level details about a deal;
+2. An **NDA** was signed in order to get the detailed real estate exposé;
+3. Express **interest** in buying (request a viewing, negotiation, etc.);
+4. **Letter of intent**;
+5. **Due diligence** and notary appointment;
+6. **Sold**.
 
 If too few people decide to sign the NDA, kely, the offer is not attractive in general terms.
 If too few people are interested after reading the real estate exposé, there is something that creates a disconnect; it could be the price, for example.
