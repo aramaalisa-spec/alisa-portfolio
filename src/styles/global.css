@@ -346,7 +346,7 @@
 		font-family: "Sofia Sans", sans-serif;
 		font-weight: 300;
 		font-size: 16px;
-		line-height: 1.2;
+		line-height: 1.6;
 		color: var(--color-ink);
 	}
 
@@ -359,7 +359,7 @@
 	.prose h2 { font-family: "Sofia Sans Semi Condensed", sans-serif; font-weight: 400 !important; font-size: clamp(1.5rem, 5vw, 36px); line-height: 1; letter-spacing: -1px; }
  	.prose h3 { font-family: "Sofia Sans", sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: underline; text-underline-offset: 3px; }
     .prose h4 { font-family: "Sofia Sans", sans-serif; font-weight: 600; font-size: 20px; line-height: 1.2; }
-    .prose p, .prose li { font-family: "Sofia Sans", sans-serif; font-weight: 300; font-size: 16px; line-height: 1.2; }
+    .prose p, .prose li { font-family: "Sofia Sans", sans-serif; font-weight: 300; font-size: 16px; line-height: 1.6; }
     .prose strong { font-weight: 700; }
 	.prose { max-width: 780px; }
 	.prose h1 { margin-bottom: 0.1rem; }
@@ -367,5 +367,11 @@
 	.prose h3 { margin-top: 3rem; margin-bottom: 1.5rem; }
 	.prose h4 { margin-top: 1.5rem; margin-bottom: 2.5rem; }
 	.prose p { margin-top: 0.5rem; margin-bottom: 1.5rem; }
-	.prose li { margin-top: 0.25rem; margin-bottom: 0.5rem; }
+	.prose li { margin-top: 0.5rem; margin-bottom: 1rem; }
+	.prose h4 + ul > li,
+	.prose h4 + ol > li {
+  		line-height: 1.3;
+  		margin-top: 0.25rem;
+  		margin-bottom: 0.5rem;
+	}
 }
