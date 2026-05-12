@@ -9,6 +9,8 @@ heroImage: /uploads/Dashboard cover tiny.png
 
 ## Real-life feedback leads to real estate sales
 
+#### The transaction dashboard is a custom overview of all transactions, used every day by transaction managers and agents "in the field". The majority of the data comes from the main CRM; some comes from SendGrid (contact dates, automated email dates, and so on); and some information is self-reported and added by users.
+
 #### My role:
 
 - Gather feedback from agents who have been using the old version for over a year;
