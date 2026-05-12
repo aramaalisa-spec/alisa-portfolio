@@ -64,4 +64,4 @@ To gain useful insights from the individual transaction view, a transa ction man
 - identify where interest drops off;
 - control the pipeline and maintain contact with interested parties.
 
-![](/uploads/Individual%20transaction%20health.png)
+![](/uploads/Individual%20transaction%20health%20hires2.png)
