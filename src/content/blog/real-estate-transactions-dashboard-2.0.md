@@ -21,8 +21,7 @@ heroImage: /uploads/Dashboard cover tiny.png
 - Create the final UI;
 - Hand off the final design;
 - Write the user stories, plan the sprints, prioritize and maintain the backlog.
-
-**Goals and KPIs:**
+  **Goals and KPIs:**
 
 1. Reduce Draft-to-Live conversion time from **7 to 4 days**;
 2. Reduce specific **UI friction** (inconvenient horizontal scroll , visual clutter)
@@ -61,7 +60,7 @@ An agent can open the drawer with detailed conversion information and decide whe
 
 ## 2. 
 
-**Drafts** are clearly marked and display what's needed at a glance. This way, if the agent has the missing information, they can edit and publish the deal.
+  **Drafts** are clearly marked and display what's needed at a glance. This way, if the agent has the missing information, they can edit and publish the deal.
 _Validation needed_ means that the draft checklist has been fulfilled, only the final "good-to-go" is needed. This is the _low-hanging-fruit_ that **affected our KPI most**. 
 
 ![](/uploads/1%20Draft%20detailed%20view%20%281%29.png)
@@ -83,4 +82,18 @@ To gain useful insights from the individual transaction view, a transa ction man
 - identify where interest drops off;
 - control the pipeline and maintain contact with interested parties.
 
-![](/uploads/Individual%20transaction%20health%205.png)
+![](/uploads/Individual%20transaction%20small%20%281%29.png)
+
+  **Every sale goes through these stages:**
+
+    1. **Preview** – someone accessed the high-level details about a deal;
+1. An **NDA** was signed in order to get the detailed real estate exposé;
+2. Express **interest** in buying (request a viewing, negotiation, etc.);
+3. **Letter of intent**;
+4. **Due diligence** and notary appointment;
+5. **Sold**.
+
+If too few people decide to sign the NDA, kely, the offer is not attractive in general terms.
+If too few people are interested after reading the real estate exposé, there is something that creates a disconnect; it could be the price, for example.
+
+![](/uploads/drawer%20view%20%281%29.png)
