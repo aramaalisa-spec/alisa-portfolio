@@ -57,16 +57,18 @@ Since the dashboard's users already developed a level of familiarity with the li
 Deals that are about to expire due to an exclusivity contract deadline are clearly shown. 
 An agent can open the drawer with detailed conversion information and decide whether renegotiation makes sense.
 
-![](/uploads/exclusivity%20runout%20row.png)
+![](/uploads/2%20exclusivity%20detailed%20view%20%281%29.png)
 
 ## 2. 
 
 **Drafts** are clearly marked and display what's needed at a glance. This way, if the agent has the missing information, they can edit and publish the deal.
 _Validation needed_ means that the draft checklist has been fulfilled, only the final "good-to-go" is needed. This is the _low-hanging-fruit_ that **affected our KPI most**. 
 
-![](/uploads/Screenshot%202026-03-25%20at%2020.13.41.png)
+![](/uploads/1%20Draft%20detailed%20view%20%281%29.png)
 
 #### Median Draft-to-Live timeline dropped from 7 to 5 days.
+
+_________________________________________________
 
 ## Individual transaction review
 
