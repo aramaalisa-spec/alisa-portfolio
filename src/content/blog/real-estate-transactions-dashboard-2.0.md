@@ -31,9 +31,9 @@ heroImage: /uploads/Dashboard cover tiny.png
 
 ### Post Mortem
 
-
-
 #### Version 1.0 did its job when it was created. After over a year of daily use, the stakeholders had some feedback. 
+
+![](/uploads/Post%20Mortem%20V1%20(1).png)
 
 Only by using the dashboard could we truly say what was useful, what was clutter, and what was missing.
 
@@ -49,8 +49,6 @@ To accomplish this goal, a transaction manager should be able to:
 - Publish new deals as soon as the checklist has been crossed out;
 - Take action on expiring contracts, either extend or let lapse.
 
-
-
 ## Individual transaction review
 
 ### Goal statement:
@@ -63,5 +61,3 @@ To gain useful insights from the individual transaction view, a transa ction man
 - assess individual transactions based on the conversion funnel;
 - identify where interest drops off;
 - control the pipeline and maintain contact with interested parties.
-
-
