@@ -50,6 +50,24 @@ To accomplish this goal, a transaction manager should be able to:
 
 ![](/uploads/Dashboards%20layouts%205.png)
 
+Since the dashboard's users already developed a level of familiarity with the linear, table-like layout, I decided to build on it. There are several new elements I implemented:
+
+## 1. 
+
+Deals that are about to expire due to an exclusivity contract deadline are clearly shown. 
+An agent can open the drawer with detailed conversion information and decide whether renegotiation makes sense.
+
+![](/uploads/exclusivity%20runout%20row.png)
+
+## 2. 
+
+**Drafts** are clearly marked and display what's needed at a glance. This way, if the agent has the missing information, they can edit and publish the deal.
+_Validation needed_ means that the draft checklist has been fulfilled, only the final "good-to-go" is needed. This is the _low-hanging-fruit_ that **affected our KPI most**. 
+
+![](/uploads/Screenshot%202026-03-25%20at%2020.13.41.png)
+
+#### Median Draft-to-Live timeline dropped from 7 to 5 days.
+
 ## Individual transaction review
 
 ### Goal statement:
