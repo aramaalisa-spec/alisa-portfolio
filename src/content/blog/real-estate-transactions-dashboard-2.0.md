@@ -13,7 +13,7 @@ heroImage: /uploads/top section (1).png
 
 #### The transaction dashboard is a custom overview of all transactions, used every day by transaction managers and agents "in the field". The majority of the data comes from the main CRM; some comes from SendGrid (contact dates, automated email dates, and so on); and some information is self-reported and added by users.
 
-#### My role:
+### My role:
 
 - Gather feedback from agents who have been using the old version for over a year;
 - Look for possible solutions for common issues;
@@ -22,14 +22,14 @@ heroImage: /uploads/top section (1).png
 - Hand off the final design;
 - Write the user stories, plan the sprints, prioritise, and maintain the backlog
 
- **Goals and KPIs:**
+###  **Goals and KPIs:**
 
 Reduce Draft-to-Live conversion time from **7 to 4 days**;
 
 1. Reduce specific **UI friction** (inconvenient horizontal scroll, visual clutter)
 2. Update the overview to reflect the **business model pivot** – instead of matching members with specific deals, we publish all the available transactions.
 
-### Post Mortem
+## Post Mortem
 
 #### Version 1.0 did its job when it was created. After over a year of daily use, the stakeholders had some feedback. 
 
@@ -75,11 +75,11 @@ _________________________________________________
 
 ## Individual transaction review
 
-### Goal statement:
+### Joob-to-be-done:
 
-#### Understand where buyer interest stands and make sure no warm lead goes cold.
+#### Determine where buyer interest lies and make sure no warm lead goes cold.
 
-To gain useful insights from the individual transaction view, a transa ction manager needs to:
+To gain useful insights from the individual transaction view, a transaction manager needs to:
 
 - check the activity log for every lead;
 - assess individual transactions based on the conversion funnel;
