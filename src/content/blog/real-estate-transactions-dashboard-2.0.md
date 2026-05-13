@@ -2,7 +2,7 @@
 title: Real Estate Transactions Dashboard 2.0
 description: Real-life feedback leads to real estate sales
 pubDate: 2026-05-12T13:41:00
-heroImage: /uploads/Dashboard cover tiny.png
+heroImage: /uploads/top section (1).png
 ---
 
 ![](/uploads/top%20section%20%281%29.png)
@@ -93,7 +93,7 @@ To gain useful insights from the individual transaction view, a transa ction man
 5. **Due diligence** and notary appointment;
 6. **Sold**.
 
-If too few people decide to sign the NDA, kely, the offer is not attractive in general terms.
+If too few people decide to sign the NDA, likely, the offer is not attractive in general terms.
 If too few people are interested after reading the real estate exposé, there is something that creates a disconnect; it could be the price, for example.
 
 ![](/uploads/drawer%20view%20%281%29.png)
