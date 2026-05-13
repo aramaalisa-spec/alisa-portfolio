@@ -55,7 +55,7 @@ To accomplish this goal, a transaction manager should be able to:
 
 Since the dashboard's users already developed a level of familiarity with the linear, table-like layout, I decided to build on it. There are several new elements I implemented:
 
-## 3. 
+## 2. 
 
 Deals that are about to expire due to an exclusivity contract deadline are clearly shown. 
 An agent can open the drawer with detailed conversion information and decide whether renegotiation makes sense.
@@ -106,6 +106,6 @@ If too few people are interested after reading the real estate exposé, there is
 
 #### ↓
 
-<video autoplay loop muted playsinline style="width:100%;border-radius:8px;">
+<video autoplay loop muted playsinline style="width:100%;border-radius:6px;">
   <source src="/transaction_dashboard.mp4" type="video/mp4" />
 </video>
