@@ -1,0 +1,107 @@
+---
+title: Real Estate Transactions Dashboard 2.0
+description: Real-life feedback leads to real estate sales
+pubDate: 2026-05-12T13:41:00
+heroImage: /uploads/top section (1).png
+---
+
+![](/uploads/top%20section%20%281%29.png)
+
+# Real Estate Transactions Dashboard 2.0
+
+## Real-life feedback leads to real estate sales
+
+#### The transaction dashboard is a custom overview of all transactions, used every day by transaction managers and agents "in the field". The majority of the data comes from the main CRM; some comes from SendGrid (contact dates, automated email dates, and so on); and some information is self-reported and added by users.
+
+#### My role:
+
+- Gather feedback from agents who have been using the old version for over a year;
+- Look for possible solutions for common issues;
+- Test possible solutions with agents;
+- Create the final UI;
+- Hand off the final design;
+- Write the user stories, plan the sprints, prioritize and maintain the backlog.
+  **Goals and KPIs:**
+
+1. Reduce Draft-to-Live conversion time from **7 to 4 days**;
+2. Reduce specific **UI friction** (inconvenient horizontal scroll , visual clutter)
+3. update the overview to reflect the **business model pivot** – instead of matching members with specific deals we publish all the available transactions.
+
+### Post Mortem
+
+#### Version 1.0 did its job when it was created. After over a year of daily use, the stakeholders had some feedback. 
+
+![](/uploads/Post%20Mortem%20V1%20(1).png)
+
+Only by using the dashboard could we truly say what was useful, what was clutter, and what was missing.
+
+## General Portfolio Overview
+
+### Job-to-be-done:
+
+#### Assess the health of the entire portfolio and ensure that the deals published online accurately reflect the state of affairs offline. 
+
+To accomplish this goal, a transaction manager should be able to:
+
+- Easily see which properties are still in _draft_ stage and what prevents them from being published;
+- Publish new deals as soon as the checklist has been crossed out;
+- Take action on expiring contracts, either extend or let lapse.
+
+![](/uploads/Dashboards%20layouts%205.png)
+
+Since the dashboard's users already developed a level of familiarity with the linear, table-like layout, I decided to build on it. There are several new elements I implemented:
+
+## 1. 
+
+Deals that are about to expire due to an exclusivity contract deadline are clearly shown. 
+An agent can open the drawer with detailed conversion information and decide whether renegotiation makes sense.
+
+![](/uploads/2%20exclusivity%20detailed%20view%20%281%29.png)
+
+## 2. 
+
+  **Drafts** are clearly marked and display what's needed at a glance. This way, if the agent has the missing information, they can edit and publish the deal.
+_Validation needed_ means that the draft checklist has been fulfilled, only the final "good-to-go" is needed. This is the _low-hanging-fruit_ that **affected our KPI most**. 
+
+![](/uploads/1%20Draft%20detailed%20view%20%281%29.png)
+
+#### Median Draft-to-Live timeline dropped from 7 to 5 days.
+
+_________________________________________________
+
+## Individual transaction review
+
+### Goal statement:
+
+#### Understand where buyer interest stands and make sure no warm lead goes cold.
+
+To gain useful insights from the individual transaction view, a transa ction manager needs to:
+
+- check the activity log for every lead;
+- assess individual transactions based on the conversion funnel;
+- identify where interest drops off;
+- control the pipeline and maintain contact with interested parties.
+
+![](/uploads/Individual%20transaction%20small%20%281%29.png)
+
+  **Every sale goes through these stages:**
+
+1. **Preview** – someone accessed the high-level details about a deal;
+2. An **NDA** was signed in order to get the detailed real estate exposé;
+3. Express **interest** in buying (request a viewing, negotiation, etc.);
+4. **Letter of intent**;
+5. **Due diligence** and notary appointment;
+6. **Sold**.
+
+If too few people decide to sign the NDA, likely, the offer is not attractive in general terms.
+If too few people are interested after reading the real estate exposé, there is something that creates a disconnect; it could be the price, for example.
+
+![](/uploads/drawer%20view%20%281%29.png)
+
+The final layout reflects feedback from the executive stakeholders who owned the KPIs and the transaction managers who used the dashboard every day. I was in close contact with the latter throughout, especially while designing the individual transaction view. After years of Version 1.0, they came with strong opinions on some aspects of the interface and just enough flexibility on the others.
+
+## ↓
+
+<video autoplay loop muted playsinline style="width:100%;border-radius:8px;">
+  <source src="/test1.mp4" type="video/mp4" />
+</video>
