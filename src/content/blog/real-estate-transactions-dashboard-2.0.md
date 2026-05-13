@@ -97,3 +97,9 @@ If too few people decide to sign the NDA, likely, the offer is not attractive in
 If too few people are interested after reading the real estate exposé, there is something that creates a disconnect; it could be the price, for example.
 
 ![](/uploads/drawer%20view%20%281%29.png)
+
+<video autoplay loop muted playsinline style="width:100%;border-radius:8px;">
+
+  <source src="/test1.mp4" type="video/mp4" />
+
+</video>
