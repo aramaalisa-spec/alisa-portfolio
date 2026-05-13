@@ -20,12 +20,14 @@ heroImage: /uploads/top section (1).png
 - Test possible solutions with agents;
 - Create the final UI;
 - Hand off the final design;
-- Write the user stories, plan the sprints, prioritize and maintain the backlog.
-  **Goals and KPIs:**
+- Write the user stories, plan the sprints, prioritise, and maintain the backlog
 
-1. Reduce Draft-to-Live conversion time from **7 to 4 days**;
-2. Reduce specific **UI friction** (inconvenient horizontal scroll , visual clutter)
-3. update the overview to reflect the **business model pivot** – instead of matching members with specific deals we publish all the available transactions.
+ **Goals and KPIs:**
+
+Reduce Draft-to-Live conversion time from **7 to 4 days**;
+
+1. Reduce specific **UI friction** (inconvenient horizontal scroll, visual clutter)
+2. Update the overview to reflect the **business model pivot** – instead of matching members with specific deals, we publish all the available transactions.
 
 ### Post Mortem
 
@@ -47,20 +49,22 @@ To accomplish this goal, a transaction manager should be able to:
 - Publish new deals as soon as the checklist has been crossed out;
 - Take action on expiring contracts, either extend or let lapse.
 
+## 1. 
+
 ![](/uploads/Dashboards%20layouts%205.png)
 
 Since the dashboard's users already developed a level of familiarity with the linear, table-like layout, I decided to build on it. There are several new elements I implemented:
 
-## 1. 
+## 3. 
 
 Deals that are about to expire due to an exclusivity contract deadline are clearly shown. 
 An agent can open the drawer with detailed conversion information and decide whether renegotiation makes sense.
 
 ![](/uploads/2%20exclusivity%20detailed%20view%20%281%29.png)
 
-## 2. 
+## 3. 
 
-  **Drafts** are clearly marked and display what's needed at a glance. This way, if the agent has the missing information, they can edit and publish the deal.
+**Drafts** are clearly marked and display what's needed at a glance. This way, if the agent has the missing information, they can edit and publish the deal.
 _Validation needed_ means that the draft checklist has been fulfilled, only the final "good-to-go" is needed. This is the _low-hanging-fruit_ that **affected our KPI most**. 
 
 ![](/uploads/1%20Draft%20detailed%20view%20%281%29.png)
