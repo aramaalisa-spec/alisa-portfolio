@@ -98,9 +98,9 @@ If too few people are interested after reading the real estate exposé, there is
 
 ![](/uploads/drawer%20view%20%281%29.png)
 
-The final layout reflects feedback from the executive stakeholders who owned the KPIs and the transaction managers who used the dashboard every day. I was in close contact with the latter throughout, especially while designing the individual transaction view. After years of Version 1.0, they came with strong opinions on some aspects of the interface and just enough flexibility on the others.
+#### The final layout reflects feedback from the executive stakeholders who owned the KPIs and the transaction managers who used the dashboard every day. I was in close contact with the latter throughout, especially while designing the individual transaction view. After years of Version 1.0, they came with strong opinions on some aspects of the interface and just enough flexibility on the others.
 
-## ↓
+#### ↓
 
 <video autoplay loop muted playsinline style="width:100%;border-radius:8px;">
   <source src="/test1.mp4" type="video/mp4" />
