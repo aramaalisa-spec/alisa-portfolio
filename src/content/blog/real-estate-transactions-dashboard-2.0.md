@@ -75,7 +75,7 @@ _________________________________________________
 
 #### Understand where buyer interest stands and make sure no warm lead goes cold.
 
-To gain useful insights from the individual transaction view, a transa ction manager needs to:
+To gain useful insights from the individual transaction view, a transaction manager needs to:
 
 - check the activity log for every lead;
 - assess individual transactions based on the conversion funnel;
@@ -99,5 +99,5 @@ If too few people are interested after reading the real estate exposé, there is
 ![](/uploads/drawer%20view%20%281%29.png)
 
 <video autoplay loop muted playsinline style="width:100%;border-radius:8px;">
-  <source src="/test1.mp4" type="video/mp4" />
+  <source src="/test1.mp4" type="video/mp4"/>
 </video>
